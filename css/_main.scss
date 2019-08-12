@@ -1,0 +1,183 @@
+main {
+    padding: 0 15px;
+    .pre-header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h1 {
+            margin: 30px 0;
+            color: #fff;
+            text-shadow: #000 1px 1px 1px;
+        }
+
+        label {
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, .7);
+
+            span {
+                margin-right: 5px;
+            }
+
+            .search {
+                width: 95%;
+                max-width: 400px;
+                margin: 30px auto;
+                line-height: 30px;
+                border-radius: 5px;
+                border: 2px solid crimson;
+
+
+            }
+
+            button {
+                line-height: 30px;
+                border-radius: 5px;
+                border: 2px solid crimson;
+                cursor: pointer;
+                text-transform: uppercase;
+                background: #fff;
+                margin-left: 5px;
+            }
+        }
+
+        .tags-wrapper {
+            .tags-list {
+                display: flex;
+                justify-content: center;
+
+                @include breakpoint(md-min) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                &>li {
+
+                    width: 100%;
+                    max-width: 600px;
+                    margin: 20px 10px;
+                    display: block;
+                    max-height: 360px;
+                    height: 100%;
+                    background: #fff;
+                    border: 2px solid crimson;
+                    text-align: center;
+                    transition: box-shadow .4s ease-out;
+                    border-radius: 4px;
+                    position: relative;
+
+                    .view-all_btn{
+                        color:#fff;
+                        background: crimson;
+                        position: absolute;
+                        right:-2px;
+                        padding: 5px 10px;
+                        border-radius: 4px;
+                        border: 2px solid crimson;
+                        text-shadow: #000 1px 1px 1px;
+                        letter-spacing: .05em;
+                        text-transform: uppercase;
+                        &:hover{
+                            color:crimson;
+                            background-color: #fff;
+                        }
+                        
+                    }
+
+                    &:hover {
+                        .view-all_btn{
+                            box-shadow: #000 0px 4px 10px;
+                        }
+                        box-shadow: #000 0px 0px 10px;
+                        transform: scale(1.02,1.02);
+                        transition: transform .4s ease-out;
+                    }
+
+
+                    h3 {
+                        background-color: crimson;
+                        padding: 6px 0;
+                        color: #fff;
+                        text-shadow: #000 1px 1px 1px;
+                        letter-spacing: .1em;
+                        text-transform: uppercase;
+                    }
+
+                }
+
+                .sub-ul {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 0 10px;
+
+                    li {
+                        height: 70px;
+                        position: relative;
+                        margin-top: 6px;
+                        border: 2px solid grey;
+                        border-radius: 2px;
+                        background-color: #fff;
+                        transition: background-color .9s ease-out;
+                        &:last-child{
+                            margin-bottom: 6px;
+                        }
+
+
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            background: lightgrey;
+                            border: 2px solid crimson;
+                            
+                            transition: border .4s ease-in-out;
+                            a {
+                                img {
+                                    filter: grayscale(80%);
+                                }
+                            }
+                        }
+
+                        &>a {
+                            display: flex;
+                            align-items: center;
+                        
+                            height: 100%;
+                            width: 100%;
+
+                            span {
+                                font-size: 14px;
+                                text-align: center;
+                                
+                                display: inline-block;
+                                padding: 5px 0;
+
+                            }
+
+                            .casino-bonus {
+                                font-size: 15px;
+                            }
+
+                            img {
+                                height: 100%;
+                                display: block;
+                            }
+
+                            .star-rating {
+                                display: flex;
+                                align-items: center;
+                                
+
+                                img {
+                                    display: block;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

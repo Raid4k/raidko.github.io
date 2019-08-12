@@ -1,0 +1,121 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(220, 20, 60);
+    min-height: 54px;
+    z-index: 1000;
+   
+
+    nav.navigation {
+        padding: 0 30px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+        // flex-wrap: wrap;
+
+            li {
+                transform: skewX(25deg);
+                width:50%; 
+                height: 50px;
+                background: crimson;
+                border: 2px solid rgb(156, 12, 41);
+                text-align: center;
+                line-height: 50px;
+                transition: background .6s ease-out;
+                transition: width .6s ease-out;
+                position: relative;
+                overflow: hidden;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        opacity: .3;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top:0;
+                        background-position: left;
+                        background-repeat: no-repeat;
+                        background-size: 80px; 
+                        transform: skewX(-25deg);
+                        
+                            
+                    }
+                    &.home_nav{
+                        &:before{
+                            background-image: url(../img/home.svg);
+                        }
+                    }
+                    &.news_nav{
+                        &:before{
+                            background-image: url(../img/news.svg);
+                            
+                        }
+                    }
+                    &.casino_nav{
+                        &:before{
+                            background-image: url(../img/casino.svg);
+                            
+                        }
+                    }
+                    &.games_nav{
+                        &:before{
+                            background-image: url(../img/games.svg);
+                            
+                        }
+                    }
+                    &.bonus_nav{
+                        &:before{
+                            background-image: url(../img/bonus.svg);
+                            
+                        }
+                    }
+                    &.forum_nav{
+                        &:before{
+                            background-image: url(../img/forum.svg);
+                            
+                        }
+                    }
+                    &.streams_nav{
+                        &:before{
+                            background-image: url(../img/steams.svg);
+                            
+                        }
+                    }
+                    &.bitcoin_nav{
+                        &:before{
+                            background-image: url(../img/bitcoin.svg);
+                            
+                        }
+                    }
+                &:hover,
+                &:active,
+                &:focus {
+                    border: 2px solid rgb(156, 12, 41);
+                    background: #fff;
+                    width: 100%;
+
+                    a {
+                        color: crimson;
+
+                    }
+                }
+
+                a {
+                    display: block;
+                    transform: skewX(-25deg);
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    font-weight: 900;
+                    text-shadow: #000 1px 1px 1px;
+                    text-transform: uppercase;
+                    // font-size: 1.1rem;
+                    transition: color .3s ease-out;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
