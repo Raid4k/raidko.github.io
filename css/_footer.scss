@@ -1,14 +1,11 @@
 footer{
-    
-    
-        
     .footer-wrapper{
         @include breakpoint (xlg-min){
             width: 100%;
             transition: width .4s ease-in;
         }
         background: #fff;
-        height: 120px;
+        height: 100px;
         display: block;
         width: 79%;
         margin-top: 20px;
