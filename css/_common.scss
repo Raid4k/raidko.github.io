@@ -1,13 +1,19 @@
+*{
+    box-sizing: border-box;
+}
 body{
     width: 100%;
-    height: 3000px;
     font-family: 'Baloo', cursive;
     font-weight: 300;
     font-size: 16px;
     box-sizing: border-box;
     width: 100%;
 }
-
+section{
+    &:not(:first-child){
+        margin-top: 20px;
+    }
+}
 h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
@@ -28,9 +34,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-main{
-    padding-top: 54px; 
-}
 
 .wrapper {
     // max-width: 1170px;
@@ -39,5 +42,7 @@ main{
     linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 76%);
     margin: 0 auto;
     padding: 0 15px;
-   
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
 }

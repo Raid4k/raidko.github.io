@@ -1,6 +1,14 @@
 
 main {
+    @include breakpoint(xlg-min){
+        width: 100%;
+        
+    }
+    width: 79%;
+    transition: width .4s ease-in;
+    
     @import 'preheader.scss';
     @import 'main-block-list.scss';
     @import 'main-news.scss';
+    @import 'faq-article.scss';
     }

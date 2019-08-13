@@ -1,0 +1,28 @@
+.faq-article{
+    ul{background: #fff;
+        border: 2px solid crimson;
+        transition: box-shadow .4s ease-out;
+        border-radius: 4px;
+        &:hover {
+            box-shadow: #000 0px 0px 10px;
+            transform: scale(1.015, 1.015);
+            transition: transform .4s ease-out;
+        }
+        li{ padding: 5px;
+            font-family: 'Inder', sans-serif;
+        }
+    }
+
+    h3 {
+        background-color: crimson;
+        padding: 6px 0;
+        color: #fff;
+        text-shadow: #000 1px 1px 1px;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h4{
+        margin: 10px 0;
+    }
+}
