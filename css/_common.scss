@@ -143,11 +143,11 @@ a {
     }
 }
 .anchor-header{
-    height: 30px;
+    min-height: 30px;
     position: absolute;
     background: rgba(255, 255, 255, 0.9);
-    top: 0;
-    left: 2%;
+   
+    left: 3%;
     transition: top 1s;
     width: 73%;
     z-index: 999;
@@ -155,7 +155,7 @@ a {
     border-top: none;
     box-shadow: 0 0 10px #000;
     border-radius: 4px;
-    
+    top: 0;
     @include breakpoint(xlg-min) {
         left:0;
     width: 100%;
@@ -163,16 +163,28 @@ a {
 
     &.fixed{
         position: fixed;
-        top: 50px;
+         top: 50px;
         
     }
     
     ul{
         display: flex;
         align-items: center;
+        justify-content: center;
         line-height: 30px;
         li{
-            margin: 0 20px;
+            margin: 0 10px;
+            @include breakpoint(ld-min) {
+               margin: 0 5px;
+               font-size: 12px;
+               
+            }
+            @include breakpoint(sm-min) {
+                
+                font-size: 11px;
+                
+             }
+
             a{
                 &:hover,
                 &:active,
