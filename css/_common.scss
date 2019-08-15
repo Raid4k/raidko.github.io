@@ -1,7 +1,8 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
     font-family: 'Baloo', cursive;
     font-weight: 300;
@@ -9,16 +10,24 @@ body{
     box-sizing: border-box;
     width: 100%;
 }
-section{
-    &:not(:first-child){
+
+section {
+    &:not(:first-child) {
         margin-top: 20px;
     }
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
 }
-p{
+
+p {
     font-family: 'Inder', sans-serif;
     font-size: 14px;
 }
@@ -37,17 +46,18 @@ a {
 
 .wrapper {
     // max-width: 1170px;
-    background: 
-    linear-gradient(rgba(5, 610, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
-    linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 76%);
+    background:
+        linear-gradient(rgba(5, 610, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
+        linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 76%);
     margin: 0 auto;
     padding: 0 15px;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
     position: relative;
-    
+
 }
+
 .collapse_btn {
     color: crimson;
     background-color: #fff;
@@ -69,4 +79,108 @@ a {
         transition: background-color .4s ease-out;
     }
 
+}
+
+.common-article {
+    position: relative;
+
+    .common-article_wrapper {
+        background: #fff;
+        border: 2px solid crimson;
+        transition: box-shadow .4s ease-out;
+        border-radius: 4px;
+        position: relative;
+
+        &:hover {
+            box-shadow: #000 0px 0px 10px;
+            transform: scale(1.015, 1.015);
+            transition: transform .4s ease-out;
+        }
+    }
+
+    .collapse_btn {
+        color: crimson;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 5px 10px;
+        border-radius: 4px;
+        border: 2px solid crimson;
+        text-shadow: #000 1px 1px 1px;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+            color: #fff;
+            background-color: grey;
+            transition: color .4s ease-out;
+            transition: background-color .4s ease-out;
+        }
+
+    }
+
+    h3.common-article_title {
+        background-color: crimson;
+        padding: 6px 0;
+        color: #fff;
+        text-shadow: #000 1px 1px 1px;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    h4 {
+        margin: 10px 0;
+    }
+
+    ul {
+        li {
+            padding: 5px;
+            font-family: 'Inder', sans-serif;
+        }
+    }
+}
+.anchor-header{
+    height: 30px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    top: 0;
+    left: 2%;
+    transition: top 1s;
+    width: 73%;
+    z-index: 999;
+    border: 2px solid crimson;
+    border-top: none;
+    box-shadow: 0 0 10px #000;
+    border-radius: 4px;
+    
+    @include breakpoint(xlg-min) {
+        left:0;
+    width: 100%;
+    }
+
+    &.fixed{
+        position: fixed;
+        top: 50px;
+        
+    }
+    
+    ul{
+        display: flex;
+        align-items: center;
+        line-height: 30px;
+        li{
+            margin: 0 20px;
+            a{
+                &:hover,
+                &:active,
+                &:focus{
+                    text-decoration: underline;
+                }
+            }
+
+        }
+    }
 }

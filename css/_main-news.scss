@@ -72,7 +72,11 @@
                 border: 2px solid grey;
                 border-radius: 5px;
                 overflow: hidden;
-                
+                @include breakpoint(md-min) {
+                    &:nth-last-child(2n){
+                        display: none;
+                    }
+                }
 
                 &:hover {
                     box-shadow: #000 0px 0px 10px;
@@ -95,8 +99,10 @@
 
                     .main-news_item-text {
                         text-align: justify;
-                        padding: 6px;
-                        line-height: 1.08rem;
+                        padding: 4px;
+                        line-height: 1.02rem;
+                        letter-spacing: .01px;
+                        word-wrap: break-word;
                         
                 
                     }

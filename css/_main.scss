@@ -1,6 +1,7 @@
 
 main {
     min-height: calc(100vh - 100px);
+    z-index: 999;
     @include breakpoint(xlg-min){
         width: 100%;
         
@@ -12,4 +13,5 @@ main {
     @import 'main-block-list.scss';
     @import 'main-news.scss';
     @import 'faq-article.scss';
+    @import 'gambling-article.scss';
     }
