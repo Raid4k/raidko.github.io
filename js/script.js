@@ -16,7 +16,7 @@ jQuery(document).ready(function () {
             top = jQuery(id).offset().top;
         
         //анимируем переход на расстояние - top за 1500 мс
-        jQuery('body,html').animate({scrollTop: top - 90}, 1000);
+        jQuery('body,html').animate({scrollTop: top - 90}, 800);
         return;
     });
 
