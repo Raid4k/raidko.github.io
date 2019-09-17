@@ -1,0 +1,166 @@
+.header_news {
+    .header_news-wrapper {
+        display: flex;
+
+        @include breakpoint (md-min) {
+            flex-wrap: wrap;
+            transition: flex-wrap .4s ease-out;
+        }
+
+
+        .header_news-cat,
+        .header_news-title {
+            text-transform: uppercase;
+        }
+
+
+        .header_news-btn {
+            width: 150px;
+            border: 2px solid #9c0c29;
+            border-radius: 4px;
+            background-color: crimson;
+            line-height: 44px;
+            text-align: center;
+            text-shadow: #000 1px 1px 1px;
+            text-transform: uppercase;
+
+            &:hover {
+                color: crimson;
+                background: #fff;
+                text-shadow: #000 1px 1px 1px;
+                transition: background-color .4s, color .4s;
+
+
+            }
+
+        }
+
+        .header_news-left {
+            width: 50%;
+            height: 450px;
+            background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url(https://www.askgamblers.com/uploads/original_half_size/slide_image/c5/00/70/9db927e89cf87258ac87b67c2197c607bc/ag-casino-video-review-s.png) no-repeat;
+            margin-right: 20px;
+            background-size: cover;
+            position: relative;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            border: 2px solid crimson;
+            border-radius: 4px;
+
+            @include breakpoint (md-min) {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+                transition: margin-bottom .4s ease-out;
+            }
+
+            &:hover {
+
+                box-shadow: #000 0px 0px 10px;
+                transform: scale(1.015, 1.015);
+                transition: transform .4s ease-out;
+            }
+
+            .header_news-cat {
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                margin-bottom: 10%;
+            }
+
+            .header_news-title {
+                margin-bottom: 10%;
+            }
+
+            .header_news-descr {
+                margin-bottom: 10%;
+            }
+        }
+
+        .header_news-right {
+            width: 50%;
+            max-height: 450px;
+            color: #fff;
+
+            @include breakpoint (md-min) {
+                width: 100%;
+            }
+
+            .header_news-right-top {
+                padding: 15px;
+                border: 2px solid crimson;
+                border-radius: 4px;
+                background: blue;
+                display: flex;
+                flex-direction: column;
+                height: 215px;
+                background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url(https://www.askgamblers.com/uploads/original_half_size/slide_image/a0/c3/d8/1c9e8feda1f54a360ac914eb59ffe96fc5/latest-casino-bspin-casino-s.jpg) no-repeat;
+                background-size: cover;
+                margin-bottom: 20px;
+                &:hover {
+
+                    box-shadow: #000 0px 0px 10px;
+                    transform: scale(1.015, 1.015);
+                    transition: transform .4s ease-out;
+                }
+            }
+
+            .header_news-right-bottom {
+
+                display: flex;
+
+                .header_news-btn-right-bottom {
+                    font-size: 14px;
+                    line-height: 32px;
+                }
+
+                h1 {
+                    font-size: 24px;
+                }
+
+                .header_news-right-bottom-r {
+                    padding: 10px;
+                    border: 2px solid crimson;
+                    border-radius: 4px;
+                    background: blue;
+                    display: flex;
+                    flex-direction: column;
+                    height: 215px;
+                    width: 50%;
+                    background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url(https://www.askgamblers.com/uploads/original_half_size/slide_image/25/92/af/8a7165c45cc6ede37158183c14cd66d559/10bbet-team-up-with-the-football-legend-didier-drogba-s.jpg) no-repeat;
+                    background-size: cover;
+                    margin-right: 20px;
+                    &:hover {
+
+                        box-shadow: #000 0px 0px 10px;
+                        transform: scale(1.015, 1.015);
+                        transition: transform .4s ease-out;
+                    }
+
+                }
+
+                .header_news-right-bottom-l {
+                    padding: 10px;
+                    border: 2px solid crimson;
+                    border-radius: 4px;
+                    background: blue;
+                    display: flex;
+                    flex-direction: column;
+                    height: 215px;
+                    width: 50%;
+                    background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url(https://www.askgamblers.com/uploads/original_half_size/slide_image/4d/8e/a5/951d7eea84814f867b8e991bb916759c02/askgamblersawards-reminder-to-vote-s.jpg) no-repeat;
+                    background-size: cover;
+                    &:hover {
+
+                        box-shadow: #000 0px 0px 10px;
+                        transform: scale(1.015, 1.015);
+                        transition: transform .4s ease-out;
+                    }
+
+                }
+            }
+        }
+    }
+
+}
