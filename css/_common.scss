@@ -147,9 +147,10 @@ a {
     position: absolute;
     background: rgba(255, 255, 255, 0.9);
    
-    left: 3%;
+    // left: 3%;
+    left: 0;
     transition: top 1s;
-    width: 73%;
+    width: 100%;
     z-index: 999;
     border: 2px solid crimson;
     border-top: none;

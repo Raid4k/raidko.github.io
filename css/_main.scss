@@ -2,15 +2,19 @@
 main {
     min-height: calc(100vh - 100px);
     z-index: 999;
+    .main-wrapper{
+        width: 100%;
+    }
     @include breakpoint(xlg-min){
         width: 100%;
         
     }
-    width: 79%;
+    width: 100%;
+    // width: 79%;
     transition: width .4s ease-in;
     
     @import 'header-news.scss';
-    @import 'main-block-list.scss';
+    @import 'main-casino.scss';
     @import 'main-news.scss';
     @import 'faq-article.scss';
     @import 'gambling-article.scss';

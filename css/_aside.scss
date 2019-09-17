@@ -2,10 +2,12 @@ aside{
     @include breakpoint(xlg-min){   
         display: none;
     }
-    position: fixed;
+    position:absolute;
     right: 10px;
     top: 58px;
     width: 20%;
+    display: none;
+    
     .right-bar_wrapper{
         ul{
             li{
