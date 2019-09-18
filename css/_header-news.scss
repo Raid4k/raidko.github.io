@@ -119,6 +119,7 @@
 
             @include breakpoint (md-min) {
                 width: 100%;
+                height: 280px;
                 margin-right: 0;
                 margin-bottom: 20px;
                 transition: margin-bottom .4s ease-out;
@@ -134,15 +135,15 @@
             .header_news-cat {
                 font-size: 14px;
                 letter-spacing: 1.2px;
-                margin-bottom: 10%;
+                margin-bottom: 5%;
             }
 
             .header_news-title {
-                margin-bottom: 10%;
+                margin-bottom: 5%;
             }
 
             .header_news-descr {
-                margin-bottom: 10%;
+                margin-bottom: 5%;
             }
         }
 
