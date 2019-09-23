@@ -4,6 +4,14 @@
         display: flex;
         width: 100%;
         max-height: 450px;
+        @include breakpoint(md-min) {
+            max-height: 100%;
+            flex-direction: column;
+            .top-list-block.top-list-bonus {
+                max-width: 100%;
+            }
+    
+        }
 
         .main-bonus-list {
             background: #fff;
@@ -12,6 +20,11 @@
             position: relative;
             width: 100%;
             margin-right: 20px;
+            @include breakpoint(md-min) {
+                margin-right: 0px;
+                margin-bottom: 20px;
+            
+            }
 
 
 
@@ -65,6 +78,9 @@
 
                 ul {
                     display: flex;
+                    @include breakpoint(md-min) {
+                        flex-direction: column;
+                    }
                    
                     &:first-child {
                         margin-top: 10px;

@@ -4,6 +4,18 @@
         display: flex;
         width: 100%;
         max-height: 450px;
+        @include breakpoint(md-min) {
+            flex-direction: column;
+            max-height: unset;
+            .main-casino-list{
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+            .top-list-block.top-list-casino{
+                max-width: 100%;
+            }
+    
+        }
 
         .main-casino-list {
             background: #fff;
@@ -12,6 +24,16 @@
             position: relative;
             width: 100%;
             margin-right: 20px;
+            @include breakpoint(md-min) {
+                
+                    margin-right: 0px;
+                    margin-bottom: 20px;
+               
+                .top-list-block.top-list-casino{
+                    max-width: 100%;
+                }
+        
+            }
 
             &:hover {
 

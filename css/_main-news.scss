@@ -2,6 +2,14 @@
     width: 100%;
     display: flex;
     max-height: 450px;
+    @include breakpoint(md-min) {
+        flex-direction: column;
+        max-height: 100%;
+        .main-news_wrapper{
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
     .top-list-block.top-list-main-news {
         background: #fff;
         border: 2px solid crimson;
@@ -106,7 +114,6 @@
         border-radius: 4px;
         background-color: #fff;
         text-align: center;
-        
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
