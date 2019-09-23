@@ -4,17 +4,34 @@
     background-color: rgb(220, 20, 60);
     min-height: 50px;
     z-index: 1000;
-   
+    
+  @import 'searchandmobile'; 
 
     nav.navigation {
         padding: 0 30px;
-
+        width: 100%;
+         
         ul {
             display: flex;
             justify-content: center;
         // flex-wrap: wrap;
+        @include breakpoint(md-min){
+            justify-content: space-between;
+            }
 
             li {
+                &.nav_burger{
+                    display: none;
+                }
+                @include breakpoint(md-min){
+                    &.nav_burger{
+                        display: block;
+                    }   
+                }
+                &:not(.nav_un) {
+                    @include breakpoint(md-min){
+                        display: none;
+                        } 
                 transform: skewX(25deg);
                 width:50%; 
                 height: 50px;
@@ -71,13 +88,13 @@
                             
                         }
                     }
-                    &.forum_nav{
+                    &.about_nav{
                         &:before{
                             background-image: url(../img/forum.svg);
                             
                         }
                     }
-                    &.streams_nav{
+                    &.search_nav{
                         &:before{
                             background-image: url(../img/steams.svg);
                             
@@ -116,6 +133,7 @@
                     letter-spacing: 2px;
                 }
             }
+        }
         }
     }
 }

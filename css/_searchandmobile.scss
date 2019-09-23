@@ -1,0 +1,141 @@
+.search-form {
+    position: relative;
+    height: 50px;
+    transform: skewX(25deg);
+
+    .search-btn {
+        border: none;
+        outline: 0;
+        cursor: pointer;
+        height: 50px;
+        width: 70px;
+        background-color: #fff;
+        position: relative;
+
+        border: 2px solid rgb(156, 12, 41);
+
+        &:hover,
+        &:active,
+        &:focus {
+            background: crimson;
+            transition: background .3s ease;
+        }
+
+        &:before {
+
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background: url(//www.bitcoinbuster.com/wp-content/themes/bitcoin/css/../img/search.svg) no-repeat;
+            background-size: cover;
+            margin: 0 auto;
+            top: 12px;
+            left: 20px;
+            transform: skewX(-25deg);
+
+        }
+    }
+
+    .search-text {
+        position: absolute;
+        right: 0;
+        bottom: -41px;
+        display: none;
+        border: 1px solid #e2e2e2;
+        padding: 10px;
+    }
+
+    .show-search {
+        display: block;
+    }
+}
+
+.mobile-menu {
+    @include breakpoint(md-min) {
+        display: block;
+
+    }
+
+    display: none;
+
+    .burger-btn {
+        border: none;
+        outline: 0;
+        cursor: pointer;
+        height: 50px;
+        width: 70px;
+        background-color: #f2f2f2;
+        position: relative;
+        display: block;
+        transform: skewX(25deg);
+        border: 2px solid rgb(156, 12, 41);
+
+        &:hover,
+        &:active {
+            background: crimson;
+            transition: background .3s ease;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: url(//www.bitcoinbuster.com/wp-content/themes/bitcoin/css/../img/hamburger.svg) no-repeat;
+            background-size: cover;
+            margin: 0 auto;
+            top: 16px;
+            left: 24px;
+            transform: skewX(-25deg);
+        }
+    }
+}
+
+.mobile-nav {
+
+    margin-top: -1000px;
+
+    transition: margin-top .5s;
+    background-color: rgba(220, 20, 60, 0.9);
+    border: 2px solid rgb(156, 12, 41);
+
+
+
+    ul {
+        li {
+            height: 50px;
+            border-bottom: 2px solid rgb(156, 12, 41);
+
+            &:hover {
+                background-color: rgba(247, 247, 247, 0.9);
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-transform: uppercase;
+                text-align: center;
+                color: #fff;
+                text-shadow: #000 1px 1px 1px;
+                line-height: 50px;
+
+
+            }
+        }
+    }
+
+
+}
+
+.show-nav {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: fixed;
+    margin-top: unset;
+    z-index: -1;
+    transition: margin-top .5s;
+
+}

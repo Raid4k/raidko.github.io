@@ -19,5 +19,20 @@ jQuery(document).ready(function () {
         jQuery('body,html').animate({scrollTop: top - 90}, 800);
         return;
     });
-
+    document.getElementById("searchBtn").onclick = function () {
+        event.preventDefault(), document.getElementById("searchWrapp").classList.toggle("show-search")
+    }, document.getElementById("burgerBtn").onclick = function () {
+        event.preventDefault(), document.getElementById("mobileBurger").classList.toggle("show-nav"), document.getElementById("bodyMain").classList.toggle("no-scroll")
+    };
+    jQuery(document).keypress(
+        function (event) {
+            if (event.which == '13') {
+                event.preventDefault();
+            }
+        });
+        jQuery(document).ready(function () {
+            jQuery('.search-btn').click(function () {
+                jQuery(this).toggleClass('close-btn');
+            });
+        });
 });
