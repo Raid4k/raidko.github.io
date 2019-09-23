@@ -73,8 +73,7 @@
             background: crimson;
             transition: background .3s ease;
         }
-        &:active,
-        &:focus{
+        &:active{
             background:#fff;
             transition: background .3s ease;
         }
