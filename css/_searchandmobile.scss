@@ -95,8 +95,13 @@
 
 .mobile-nav {
 
-    margin-top: -1000px;
-
+    
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    margin-top: unset;
+    z-index: -1;
     transition: margin-top .5s;
     background-color: rgba(220, 20, 60, 0.9);
     border: 2px solid rgb(156, 12, 41);
@@ -127,16 +132,5 @@
         }
     }
 
-
-}
-
-.show-nav {
-    height: 100%;
-    width: 100%;
-    display: block;
-    position: fixed;
-    margin-top: unset;
-    z-index: -1;
-    transition: margin-top .5s;
 
 }

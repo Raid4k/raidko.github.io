@@ -22,7 +22,7 @@ jQuery(document).ready(function () {
     document.getElementById("searchBtn").onclick = function () {
         event.preventDefault(), document.getElementById("searchWrapp").classList.toggle("show-search")
     }, document.getElementById("burgerBtn").onclick = function () {
-        event.preventDefault(), document.getElementById("mobileBurger").classList.toggle("show-nav"), document.getElementById("bodyMain").classList.toggle("no-scroll")
+        event.preventDefault(), document.getElementById("bodyMain").classList.toggle("no-scroll")
     };
     jQuery(document).keypress(
         function (event) {
@@ -35,4 +35,12 @@ jQuery(document).ready(function () {
                 jQuery(this).toggleClass('close-btn');
             });
         });
+      
+        
+        $(document).ready(function(){
+            $(".burger-btn").click(function(){
+                $(".mobile-nav").slideToggle();
+            });
+        });
 });
+// убираем по свайпу меню
