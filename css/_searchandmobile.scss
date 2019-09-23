@@ -14,9 +14,7 @@
 
         border: 2px solid rgb(156, 12, 41);
 
-        &:hover,
-        &:active,
-        &:focus {
+        &:hover {
             background: crimson;
             transition: background .3s ease;
         }
