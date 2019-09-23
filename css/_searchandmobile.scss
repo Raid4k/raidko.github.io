@@ -73,6 +73,11 @@
             background: crimson;
             transition: background .3s ease;
         }
+        &:active,
+        &:focus{
+            background:#fff;
+            transition: background .3s ease;
+        }
 
         &:before {
             content: "";
