@@ -1,0 +1,109 @@
+.about-us {
+    margin-top: 20px;
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: crimson;
+        text-shadow: #000 1px 1px 1px;
+    }
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        color: crimson;
+        text-shadow: #000 1px 1px 1px;
+        margin-top: 20px;
+    }
+
+    .about-us-wrapper {
+        display: flex;
+        flex-direction: column;
+
+
+
+        .about-desc {
+            background: #fff;
+            min-height: 20vh;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            margin-right: 10px;
+            border: 2px solid crimson;
+            border-radius: 4px;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .about-contact {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: rgb(220, 20, 120);
+            text-shadow: #000 1px 1px 1px;
+
+            @include breakpoint(ld-min) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .banner-wrapper {
+
+        min-height: 450px;
+        position: relative;
+        background: #DD4096;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+
+        img {
+            position: absolute;
+            max-height: 400px;
+            max-width: 100%;
+            right: 5%;
+            border-radius: 4px;
+            z-index: 1;
+            overflow: hidden;
+            @include breakpoint(md-min){
+                right: 0;
+            }
+        }
+
+        .banner-text {
+            color: #fff;
+            padding: 10px;
+            z-index: 2;
+            position: relative;
+            margin-right: 20%;
+
+        }
+        ul{
+            display: flex;
+            position: relative;
+            width: 100%;
+            
+            padding-left: 10%;
+            z-index: 2;
+            font-size: 1rem;
+            @include breakpoint(md-min) {
+            padding-left: unset;    
+            }
+            
+            li{
+             width: 200px;
+             height:300px;
+             margin: 10px;
+             background: #fff;
+             @include breakpoint(md-min) {
+                &:nth-last-child(2n){
+                    display: none;
+                }    
+                }
+
+             
+            }
+        }
+    }
+}

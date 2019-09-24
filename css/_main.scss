@@ -1,17 +1,7 @@
 
 main {
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 170px);
     z-index: 999;
-    .main-wrapper{
-        width: 100%;
-    }
-    @include breakpoint(xlg-min){
-        width: 100%;
-        
-    }
-    width: 100%;
-    // width: 79%;
-    transition: width .4s ease-in;
     
     @import 'header-news.scss';
     @import 'main-casino.scss';
