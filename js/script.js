@@ -37,10 +37,17 @@ jQuery(document).ready(function () {
         });
       
         
-        $(document).ready(function(){
-            $(".burger-btn").click(function(){
-                $(".mobile-nav").slideToggle();
+        jQuery(document).ready(function(){
+            jQuery(".burger-btn").click(function(){
+                jQuery(".mobile-nav").slideToggle();
             });
         });
+        //news toggle
+        jQuery(document).ready(function(){
+            jQuery(".news-btn").click(function(){
+                jQuery(".news-d_hidden").slideToggle();
+            });
+        });
+        
 });
-// убираем по свайпу меню
+
