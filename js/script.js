@@ -43,11 +43,12 @@ jQuery(document).ready(function () {
             });
         });
         //news toggle
-        jQuery(document).ready(function(){
+        
             jQuery(".news-btn").click(function(){
-                jQuery(".news-d_hidden").slideToggle();
+                jQuery(this).parent().children().children('.news-d_hidden').slideToggle('slow');
+                return false;
             });
-        });
+       
         
 });
 
