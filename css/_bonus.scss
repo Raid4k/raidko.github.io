@@ -13,6 +13,9 @@
         max-height: 450px;
         width: 30%;
         margin-top: 20px;
+        @include breakpoint(md-min){
+            width: 100%;
+        }
         
         
 
@@ -106,20 +109,35 @@
     }
     .bonus-wrapper{
         display: flex;
+        justify-content: center;
         align-items: flex-start;
         align-content: flex-start;
         flex-wrap: wrap;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 10px;    
+        position: relative;
+            &:after{
+                content: '';
+                position: relative;
+                width: 46%;
+                height: 0;
+                margin-left: 20px;
+                display: block;
+            }
+        
     }
         .bonus-item {
-            width: 47%;
+            width: 46%;
             background: #fff;
             border: 2px solid crimson;
             border-radius: 4px;
             padding: 10px;
             margin: 10px;  
             flex-grow: 0;
+            @include breakpoint(md-min){
+                width: 100%;
+            }
+           
             &:hover {
                 box-shadow: #000 0px 0px 10px;
                 transform: scale(1.01, 1.01);
