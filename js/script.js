@@ -48,6 +48,11 @@ jQuery(document).ready(function () {
                 jQuery(this).parent().children().children('.news-d_hidden').slideToggle('slow');
                 return false;
             });
+            //bonus toggle
+            jQuery(".bonus_more-btn").click(function(){
+                jQuery(this).parent().parent().parent().children('.bonus_hidden-info').slideToggle('slow');
+                return false;
+            });
        
         
 });
