@@ -15,7 +15,7 @@
         border: 2px solid rgb(156, 12, 41);
 
         &:hover {
-            background: crimson;
+            background: #930000;
             transition: background .3s ease;
         }
 
@@ -70,7 +70,7 @@
         border: 2px solid rgb(156, 12, 41);
 
         &:hover {
-            background: crimson;
+            background: #930000;
             transition: background .3s ease;
         }
         &:active{
@@ -103,7 +103,7 @@
     margin-top: unset;
     z-index: -1;
     transition: margin-top .5s;
-    background-color: rgba(220, 20, 60, 0.9);
+    background-color: rgba(147, 0, 0, 0.9);
     border: 2px solid rgb(156, 12, 41);
 
 

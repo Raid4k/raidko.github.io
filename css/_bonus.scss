@@ -8,7 +8,7 @@
 
     .top-list-block.top-list-casino {
         background: #fff;
-        border: 2px solid crimson;
+        border: 2px solid #930000;
         border-radius: 4px;
         position: relative;
         max-width: 400px;
@@ -31,7 +31,7 @@
         }
 
         h3 {
-            background: crimson;
+            background: #930000;
             line-height: 32px;
             text-align: left;
             padding-left: 20px;
@@ -133,7 +133,7 @@
         .bonus-item {
             width: 46%;
             background: #fff;
-            border: 2px solid crimson;
+            border: 2px solid #930000;
             border-radius: 4px;
             padding: 10px;
             margin: 10px;  
@@ -234,7 +234,7 @@
                     text-shadow: #000 1px 1px 1px;
                     line-height: 14px;
                     &:hover{
-                        background: crimson;
+                        background: #930000;
                         transition: background .5s;
                     }
 
@@ -257,7 +257,7 @@
                     text-shadow: #000 1px 1px 1px;
                     line-height: 14px;
                     &:hover{
-                        background: crimson;
+                        background: #930000;
                         transition: background .5s;
                     }
                 }

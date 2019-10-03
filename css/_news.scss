@@ -11,7 +11,7 @@
             display: flex;
             padding: 20px;
             background: #fff;
-            border: 2px solid crimson;
+            border: 2px solid #930000;
             border-radius: 4px;
             margin-top: 20px;
             border-radius: 4px;
@@ -90,7 +90,7 @@
                     text-shadow: #000 1px 1px 1px;
 
                     &:hover {
-                        background: crimson;
+                        background: #930000;
                         transition: background .5s;
                     }
                 }
@@ -107,7 +107,7 @@
 
         margin-top: 20px;
         background: #fff;
-        border: 2px solid crimson;
+        border: 2px solid #930000;
         border-radius: 4px;
         position: relative;
         max-width: 400px;
@@ -122,7 +122,7 @@
         }
 
         h3 {
-            background: crimson;
+            background: #930000;
             line-height: 32px;
             text-align: left;
             padding-left: 20px;

@@ -1,7 +1,7 @@
 .header {
     position: fixed;
     width: 100%;
-    background-color: rgb(220, 20, 60);
+    background-color: #930000;
     min-height: 50px;
     z-index: 1000;
     
@@ -35,7 +35,7 @@
                 transform: skewX(25deg);
                 width:50%; 
                 height: 50px;
-                background: crimson;
+                background: #930000;
                 border: 2px solid rgb(156, 12, 41);
                 text-align: center;
                 line-height: 50px;
@@ -114,7 +114,7 @@
                     width: 100%;
 
                     a {
-                        color: crimson;
+                        color: #930000;
 
                     }
                 }
