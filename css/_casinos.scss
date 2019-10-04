@@ -6,7 +6,7 @@
     .casino-item {
         
         background: #fff;
-        border: 2px solid #930000;
+        border: 2px solid $maincolor;
         border-radius: 4px;
         margin-top: 20px;
         &:not(:last-child){
@@ -60,7 +60,7 @@
                     cursor: pointer;
                     border: none;
                     border-radius: 4px;
-                    background: #930000;
+                    background: $maincolor;
                     width: 100%;
                     text-align: center;
                     text-transform: uppercase;
@@ -71,7 +71,7 @@
                         margin-right: 10px;
                     }
                     &:hover{
-                        background: #930000;
+                        background: $maincolor;
                         transition: background .5s;
                     }
                 }

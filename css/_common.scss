@@ -4,8 +4,8 @@
 
 body {
     width: 100%;
-    font-family: 'Baloo', cursive;
-    font-weight: 300;
+    font-family: 'Lato';
+    font-weight: 400;
     font-size: 16px;
     box-sizing: border-box;
     width: 100%;
@@ -28,11 +28,17 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
+    font-family: 'Lato';
+    font-weight: 600;
 }
 
 p {
-    font-family: 'Inder', sans-serif;
-    font-size: 14px;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+font-weight: 400;
+mix-blend-mode: normal;
+
 }
 
 ul,
@@ -42,9 +48,14 @@ li {
     list-style: none;
 }
 
-a {
+a { 
+    font-family: 'Rubik';
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-size: 14px;
     text-decoration: none;
     color: inherit;
+    
 }
 
 .wrapper {
@@ -60,14 +71,15 @@ a {
 }
 
 .collapse_btn {
-    color: #930000;
+    $maincolor:#930000!global;
+    color: $maincolor;
     background-color: #fff;
     position: absolute;
     right: 0;
     top: 0;
     padding: 5px 10px;
     border-radius: 4px;
-    border: 2px solid #930000;
+    border: 2px solid $maincolor;
     text-shadow: #000 1px 1px 1px;
     letter-spacing: .05em;
     text-transform: uppercase;
@@ -87,7 +99,7 @@ a {
 
     .common-article_wrapper {
         background: #fff;
-        border: 2px solid #930000;
+        border: 2px solid $maincolor;
         transition: box-shadow .4s ease-out;
         border-radius: 4px;
         position: relative;
@@ -100,14 +112,14 @@ a {
     }
 
     .collapse_btn {
-        color: #930000;
+        color: $maincolor;
         background-color: #fff;
         position: absolute;
         right: 0;
         top: 0;
         padding: 5px 10px;
         border-radius: 4px;
-        border: 2px solid #930000;
+        border: 2px solid $maincolor;
         text-shadow: #000 1px 1px 1px;
         letter-spacing: .05em;
         text-transform: uppercase;
@@ -123,7 +135,7 @@ a {
     }
 
     h3.common-article_title {
-        background-color: #930000;
+        background-color: $maincolor;
         padding: 6px 0;
         color: #fff;
         text-shadow: #000 1px 1px 1px;
@@ -139,7 +151,8 @@ a {
     ul {
         li {
             padding: 5px;
-            font-family: 'Inder', sans-serif;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
         }
     }
 }
@@ -153,7 +166,7 @@ a {
     transition: top 1s;
     width: 100%;
     z-index: 999;
-    border: 2px solid #930000;
+    border: 2px solid $maincolor;
     border-top: none;
     box-shadow: 0 0 10px #000;
     border-radius: 4px;
