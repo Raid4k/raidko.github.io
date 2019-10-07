@@ -1,18 +1,16 @@
 .faq-article {
     position: relative;
-    .faq-article_wrapper{
+
+    .faq-article_wrapper {
         background: #fff;
-        border: 2px solid $maincolor;
-        transition: box-shadow .4s ease-out;
+        box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
+        border-radius: 10px;
         border-radius: 4px;
         position: relative;
 
-        &:hover {
-            box-shadow: #000 0px 0px 10px;
-            transform: scale(1.015, 1.015);
-            transition: transform .4s ease-out;
-        }
+
     }
+
     .collapse_btn {
         color: $maincolor;
         background-color: #fff;
@@ -27,12 +25,7 @@
         text-transform: uppercase;
         cursor: pointer;
 
-        &:hover {
-            color: #fff;
-            background-color: grey;
-            transition: color .4s ease-out;
-            transition: background-color .4s ease-out;
-        }
+
 
     }
 
@@ -44,8 +37,12 @@
     }
 
     h3.common-article_title {
-        background-color: $maincolor;
-        padding: 6px 0;
+        background: $maincolor;
+        border-radius: 10px 10px 0px 0px;
+        line-height: 32px;
+        text-align: left;
+        padding: 12px;
+        text-transform: uppercase;
         color: #fff;
         text-shadow: #000 1px 1px 1px;
         letter-spacing: .1em;
