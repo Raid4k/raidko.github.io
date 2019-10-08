@@ -3,7 +3,7 @@
     .main-casino-wrapper {
         display: flex;
         width: 100%;
-        max-height: 450px;
+        
 
         @include breakpoint(md-min) {
             flex-direction: column;
@@ -26,7 +26,7 @@
             border-radius: 4px;
             position: relative;
             width: 100%;
-            margin-right: 20px;
+            // margin-right: 10px;
 
             @include breakpoint(md-min) {
 
@@ -44,7 +44,7 @@
             .see-all-btn {
                 color: $maincolor;
                 position: absolute;
-                right: 20px;
+                right: 30px;
                 top: 0;
                 padding: 5px 10px;
                 letter-spacing: .05em;
@@ -86,34 +86,63 @@
 
             >ul {
                 display: flex;
-                flex-direction: column;
+                justify-content: stretch;
+                
+                flex-wrap: wrap;
+                
+               
+                
 
                 li {
                     display: flex;
                     align-items: center;
-                    margin: 6px 10px;
+                    margin:8px 8px 0px 0px;
                     box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
                     border-radius: 10px;
                     background: #ffffff;
                     max-height: 130px;
+                    width: 49%;
+                    min-width: 320px;
+
+                    &:nth-child(2n+2){
+                        margin-right: 0;
+                    }
+                    
+                    @include breakpoint (xlg99-min ){
+                        width: 98%;
+                        margin:5px 10px 0px 0px;
+                    }
+                    @include breakpoint (lg-min ){
+                        margin: 5px 0 0 0;
+                        
+                       
+                    }
+                    @include breakpoint (md-min ){
+                        width: 100%;
+                    }
+                    
+                    
 
                     img {
-                        width: 130px;
-                        height: 130px;
+                        max-width: 130px;
+                        max-height: 130px;
                         border-radius: 10px 0px 0px 10px;
 
                     }
 
                     p {
-                        max-width: 100%;
-                        margin: 0 15px 0 15px;
-                        padding: 0 20px;
+                        
+                        margin: 0 10px 0 10px;
+                        padding: 0 10px;
+                        text-align: center;
+                        width: 100%;
+                        
                     }
 
                     .casino-list-btn {
                         display: flex;
                         flex-direction: column;
-                        min-width: 10%;
+                        
                         align-items: flex-end;
 
                         a {
@@ -152,8 +181,10 @@
         border-radius: 10px;
         position: relative;
         max-width: 400px;
+        min-width: 400px;
+        width: 100%;
         max-height: 450px;
-        width: 40%;
+        
         @include breakpoint(md-min){
             width: 100%;
         }

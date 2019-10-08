@@ -26,6 +26,11 @@
             @content;
         }
     }
+    @else if $point==xlg99-min {
+        @media (max-width:1199px) {
+            @content;
+        }
+    }
     @else if $point==xlg-max {
         @media (min-width:1249px) {
             @content;
