@@ -95,6 +95,7 @@
     .header_news-wrapper {
         display: flex;
         margin-right: 20px;
+        width: 100%;
 
         @include breakpoint (md-min) {
             flex-wrap: wrap;

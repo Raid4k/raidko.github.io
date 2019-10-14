@@ -218,6 +218,7 @@
                 padding: 5px;
                 font-size: 14px;
                 text-align: center;
+                text-transform: uppercase;
 
                 @include breakpoint (xlg-min) {
                     text-align: center;
@@ -238,7 +239,7 @@
                 }
 
                 .bonus-descr {
-                    
+                    text-transform: uppercase;
                     color: lightsalmon;
                     font-family: 'Lato';
                     font-size: 14px;
@@ -249,8 +250,10 @@
 
                 }
                 .bonus-code{
+                    
                     p {
                         font-size: 14px;
+                        text-transform: uppercase;
                     }
                 }
             }

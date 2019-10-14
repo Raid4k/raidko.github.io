@@ -49,6 +49,99 @@
         display: block;
     }
 }
+.search-wrapp {
+    position: absolute;
+    right: 0;
+    display: none;
+    z-index: 1001;
+
+    .search-text {
+        padding: 10px 25px 10px 5px;
+        font-size: 16px;
+
+    }
+
+    .search-text-sbmt {
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        background: url(../img/search.svg) no-repeat;
+        background-size: cover;
+        height: 16px;
+        width: 16px;
+        border: none;
+        cursor: pointer;
+
+    }
+}
+
+.show-search {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 58px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    z-index: 1111;
+}
+.search-results {
+    .page-header {
+        margin: 20px 0;
+
+        .page-title {
+            span {
+                font-family: 'Circe-Exbold';
+            }
+        }
+    }
+
+    .site-main {
+        padding: 10px;
+
+        article {
+            margin: 50px 0;
+
+            header {
+                h2 {
+                    font-family: 'Circe-Exbold';
+                    
+                    margin: 10px 0;
+                    a{
+                        font-size: 24px;
+                    }
+                }
+
+                .entry-meta {
+                    margin: 10px 0;
+                }
+            }
+
+            .post-thumbnail {
+                img {
+                        display: block;
+    width: 50%;
+    height: 50%;
+                }
+            }
+
+            .entry-summary {
+                line-height: 1.56;
+                margin: 10px 0;
+            }
+
+            .entry-footer {
+                span {
+                   
+                        margin-right: 10px;
+                   
+
+                }
+            }
+        }
+    }
+}
+
 
 .mobile-menu {
     @include breakpoint(md-min) {

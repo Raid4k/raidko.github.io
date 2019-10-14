@@ -2,6 +2,7 @@
 main {
     min-height: calc(100vh - 300px);
     z-index: 999;
+    margin-top: 20px;
     
     @import 'header-news.scss';
     @import 'main-casino.scss';
