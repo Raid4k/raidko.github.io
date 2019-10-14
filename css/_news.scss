@@ -70,11 +70,16 @@
 
                 .news-item-title {
                     padding: 10px;
-
-
+                    
                     h2 {
-                        text-transform: uppercase;
+                        
                         font-size: 15px;
+                        font-weight: 900;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        
+                        
 
                     }
                 }
@@ -82,7 +87,9 @@
                 .news-item-desc {
                     p {
                         margin: 0;
+                        text-align: justify;
                         padding: 0 10px;
+                       
                     }
                 }
 
