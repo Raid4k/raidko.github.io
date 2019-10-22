@@ -229,4 +229,12 @@ a {
     max-width: 400px;
     min-width: 400px;
     width: 100%;
+    .casino-top-btn{
+        &:hover{
+            transition: .3s;
+        }
+    }
+}
+a#scroll-to-top {
+z-index: 99999;
 }
