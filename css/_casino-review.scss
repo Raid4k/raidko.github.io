@@ -11,45 +11,50 @@
 
         .casino-review-header {
             background: #000;
-            color: #fff;
+
             padding: 10px 40px;
             border-radius: 10px;
             min-height: 250px;
             display: flex;
-            flex-direction: column;
+            align-items: center;
             justify-content: center;
             box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
 
-            h1.casino-review-title {
-                font-size: 42px;
-            }
+            .casino-review-left {
+                color: #fff;
+                width: 100%;
 
-            p.casino-review-desc {
-                font-family: 'Rubik';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 19px;
+                h1.casino-review-title {
+                    font-size: 42px;
+                }
 
-                max-width: 300px;
-            }
+                p.casino-review-desc {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
 
-            a.casino-review-btn {
-                max-width: 170px;
-                height: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid #fff;
-                border-radius: 20px;
-                font-size: 13px;
-                text-align: center;
-                text-transform: uppercase;
+                    max-width: 300px;
+                }
 
-                &:hover {
-                    color: $maincolor;
-                    background: #fff;
-                    transition: background-color .4s, color .4s;
+                a.casino-review-btn {
+                    max-width: 170px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #fff;
+                    border-radius: 20px;
+                    font-size: 13px;
+                    text-align: center;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: $maincolor;
+                        background: #fff;
+                        transition: background-color .4s, color .4s;
+                    }
                 }
             }
         }
@@ -118,25 +123,30 @@
                 text-transform: uppercase;
                 margin: 20px 0;
             }
-            .casino-review-det-wrapper{
+
+            .casino-review-det-wrapper {
                 background: #fff;
                 border-radius: 10px;
                 box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
-                
 
-                ul{ padding: 20px 0;
-                    li{
+
+                ul {
+                    padding: 25px 0;
+
+                    li {
                         display: flex;
                         align-items: flex-start;
                         justify-content: space-between;
-                        padding:10px 20px;
+                        padding: 10px 20px;
                         width: 100%;
-                        h4{
+
+                        h4 {
                             min-width: 100px;
                             width: 20%;
                         }
-                        p{
-                            
+
+                        p {
+
                             margin: 0;
                             width: 100%;
                         }
@@ -144,19 +154,8 @@
                 }
             }
         }
-        .casino-review-text{
-            margin: 20px 0;
-            font-family: 'Lato';
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 27px;
-/* or 150% */
 
-letter-spacing: 0.1em;
 
-color: #333333;
-        }
 
     }
 }
@@ -166,13 +165,13 @@ color: #333333;
     box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
     border-radius: 10px;
     position: relative;
-    min-width: 350px;
+    max-width: 400px;
     width: 100%;
     max-height: 450px;
-    margin-bottom: 20px;
+    
 
     @include breakpoint(md-min) {
-        margin-top: 20px;
+       
     }
 
 
@@ -242,4 +241,18 @@ color: #333333;
 
         }
     }
+}
+
+.casino-review-text {
+    margin: 40px 0;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* or 150% */
+
+    letter-spacing: 0.1em;
+
+    color: #333333;
 }
