@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XXX</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700,900&display=swap" rel="stylesheet">
+</head>
+
+<body id="bodyMain">
+    <header class="header">
+
+        <div class="header-wrapper">
+            <nav class="navigation">
+                <ul>
+                    <li class="nav_un nav_burger">
+                        <div class="mobile-menu"><button type="submit" class="burger-btn" id="burgerBtn"></button></div>
+                    </li>
+                    <li class="logo_nav"><a href="/" class="nav_link">LOGO</a></li>
+                    <li class="home_nav"><a href="/" class="nav_link">HOME</a></li>
+                    <li class="bonus_nav"><a href="page-bonuses.html" class="nav_link">BONUS</a></li>
+                    <li class="casino_nav"><a href="/page-casinos.html" class="nav_link">CASINO</a>
+                    <li class="games_nav"><a href="/page-games.html" class="nav_link">GAMES</a></li>
+                    <li class="news_nav"><a href="/page-news.html" class="nav_link">NEWS</a></li>
+                    <li class="about_nav"><a href="/page-about.html" class="nav_link">About us</a></li>
+                    <li class="nav_un">
+                        <div class="search-form">
+                            <button type="button" class="search-btn" id="searchBtn"></button>
+                            <form action="<?php echo home_url( '/' ) ?>" role="search" method="get">
+                                <div class="search-wrapp" id="searchWrapp">
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="mobile-nav" id="mobileBurger">
+            <nav class="header-mobile-nav">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/page-bonuses.html">BONUSES</a></li>
+                    <li><a href="/page-casinos.html">CASINOS</a></li>
+                    <li><a href="/page-games.html">GAMES</a></li>
+                    <li><a href="/page-news.html">NEWS</a></li>
+                    <li><a href="/page-about.html">about us</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <main>
+            <div class="casino_review-wrapper">
+                <div class="casino-review">
+                    <div class="casino-review-header">
+                        <div class="casino-review-left"> <h1 class="casino-review-title">Mega game</h1>
+                            <p class="casino-review-desc">Sskdjaskd asdj aisjdq qoiwjdoi qjcjao.
+                                Sskdjaskd asdj aisjdq qoiwjdoi qjcjao.
+                            </p>
+                            <a href="#" class="casino-review-btn">Try</a></div>
+                       
+                        <div class="top-list-block top-list-bonus">
+                                
+                                <ul>
+                                    <li><img src="/img/bit.png" alt=""><a class="casino-top-title" href="#">100% up to €300 + 50 Bonus Spins</a></li>
+                                    <li><img src="/img/bit.png" alt=""><a class="casino-top-title" href="#">100% up to €300 + 50 Bonus Spins</a></li>
+                                    <li><img src="/img/bit.png" alt=""><a class="casino-top-title" href="#">100% up to €300 + 50 Bonus Spins</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <!-- <div class="casino-review-adv">
+                        <ul>
+                            <h3>Advantages</h3>
+                            <li class="casino-review-advp">dqdasdasdas asdas asdas</li>
+                            <li class="casino-review-advp">vcvwedfefq sdq asdasasda sasd asasdas</li>
+                            <li class="casino-review-advp">qsd as das asd </li>
+                            <li class="casino-review-advp">asd qdq dqd22</li>
+                        </ul>
+                        <ul>
+                            <h3>Disadvantages</h3>
+                            <li class="casino-review-advm">dqdasdasdas asdas asdas</li>
+                            <li class="casino-review-advm">vcvwedfefq sdq asdasasda sasd asasdas</li>
+                            <li class="casino-review-advm">qsd as das asd </li>
+                            <li class="casino-review-advm">asd qdq dqd22</li>
+                        </ul>
+
+
+                    </div> -->
+                    <!-- <div class="casino-review-det">
+                        <h2>Casino Details</h2>
+                        <div class="casino-review-det-wrapper">
+                            <ul>
+                                <li><h4>Website</h4><p>https://www.joocasino.com/</p></li>
+                                <li><h4>Software</h4><p>Microgaming, NetEnt, Evolution Gaming, Betsoft, Play'n GO,
+                                        1x2Games, iSoftBet, Yggdrasil Gaming, BGAMING, Ezugi,
+                                        Amatic Industries, EGT Interactive, Elk Studios, Endorphina,
+                                        GameArt, Booming Games, Habanero, Pragmatic Play,
+                                        Mr. Slotty, Belatra, Iron Dog Studios, Spinomenal.</p></li>
+                                <li><h4>Deposit Methods</h4><p>Bank Wire Transfer, EcoPayz, Maestro, MasterCard, Neteller,
+                                        Paysafe Card, Visa, Sofortuberwaisung, Neosurf, QIWI, Skrill,
+                                        Bitcoin, Yandex Money, Cubits, LAVA pay, CEP Bank, Zimpler</p></li>
+                                <li><h4>Withdrawal Methods</h4><p>Bank Wire Transfer, Maestro, MasterCard, Neteller, Visa, Cubits
+                                        Bank transfer, EcoPayz, QIWI, Skrill, Bitcoin, Yandex Money</p></li>
+                                <li><h4>Withdrawal Times</h4><p>EWallets: 0-1 hours
+
+                                        Credit / Debit Cards: 24-72 hours
+                                        
+                                        Bank Transfers: 3-5 days
+                                        
+                                        Cheques: Not offered
+                                        
+                                        Pending Time: 24-72 hours</p></li>
+                                <li><h4>Withdrawal Limit</h4><p>2500 EUR per weerk, 12 000 EUR per month</p></li>
+                                <li><h4>Affiliate Program</h4><p>Joo Casino Affiliates</p></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <div class="casino-review-text">
+                            <p><b> Joo Casino</b> is an online casino powered by the leading software platforms such as NetEnt, SoftSwiss and Ezugi , offering a selection of casino games
+                            which include Slots, Poker games, Roulette and Card games. The full collection of games is available to play through a compatible flash browser with no
+                            requirement of any downloading. Joo Casino also offers a selection of their games on the go with a fully optimized mobile casino. The casino is regulated
+                            by the laws of Curacao, Netherlands Antilles. 
+                        </p> 
+                        <p><b>Restricted Countries</b>
+                            <br>
+                            The casino accepts players only from those countries and geographic regions where online gambling is allowed by law.
+                        </p> 
+                        <p><b>Virtual Games</b>
+                            <br>
+                            Players can enjoy a selection of video slots and themed slots, with the use of an easy to use search function. All of the slots are available to play
+                            instantly with the click of a single button. Some of the casinos most popular slots include Book of Fortune slot, Eye of Ra slot, Book of Aztec slot and
+                            Wild Shark slot. Fruit slots include Wild 7 slot, among many.
+                            Enjoy a small range of roulette games like European Roulette and American Roulette and a few multiplayer games like Multiplayer French Roulette. Fans
+                            of card games can take advantage of a few games like Multihand Blackjack and Hi-Lo Switch.
+                            There is a handful of video poker games which include Multiwin and Jacks or Better.
+                            
+                            <p><b>Live Casino</b>
+                                <br>
+                            Their Live Casino room at Joo Casino has a user-friendly gaming interface and brings the feel of real-life casino directly your home. So you play
+                            Roulette, Blackjack, Baccarat Lottery or Keno from the comfort of your living room against pleasant live dealers and chat with them while doing so.
+                        </p>
+                            <p><b>Mobile Gaming</b><br>
+                            Players can enjoy games on the go from their smartphone and tablet devices using the iOS software. Mobile games available include Lucky Coin,
+                            Wild Respin and Lovely Lady.
+                        </p>
+                            <p><b>Support</b><br>
+                            Joo Casino provides an online live chat service where players can gain help any time of the day. Other support options include Email and an online
+                            Message Form.
+                        </p>
+                            <p><b>Security and Fairness</b><br>
+                            Players can rest assured that their details are 100% safe & secure as the casino uses industry standards encryption for all transactions. Games are also
+                            monitored to ensure fairness with a Random Number Generator.
+                        </p>
+                    </div>
+                </div>
+                <div class="top-list">
+                    
+                    <div class="top-list-block top-list-casino">
+                        <h3>Top Casino</h3>
+                        <ul>
+                            <li><img src="/img/spinia-logo.png" alt=""><a class="casino-top-title" href="#">Spinia
+                                    Casino</a><a class="casino-top-btn" href="http://" target="_blank"
+                                    rel="noopener noreferrer">Play</a></li>
+                            <li><img src="/img/bit.png" alt=""><a class="casino-top-title" href="#">Spinia
+                                    Casino</a><a class="casino-top-btn" href="http://" target="_blank"
+                                    rel="noopener noreferrer">Play</a></li>
+                            <li><img src="/img/bit.png" alt=""><a class="casino-top-title" href="#">Spinia
+                                    Casino</a><a class="casino-top-btn" href="http://" target="_blank"
+                                    rel="noopener noreferrer">Play</a></li>
+                            <li><img src="/img/bit.png" alt=""><a class="casino-top-title" href="#">Spinia
+                                    Casino</a><a class="casino-top-btn" href="http://" target="_blank"
+                                    rel="noopener noreferrer">Play</a></li>
+                            <li><img src="/img/bit.png" alt=""><a class="casino-top-title" href="#">Spinia
+                                    Casino</a><a class="casino-top-btn" href="http://" target="_blank"
+                                    rel="noopener noreferrer">Play</a></li>
+                            <li><img src="/img/bit.png" alt=""><a class="casino-top-title" href="#">Spinia
+                                    Casino</a><a class="casino-top-btn" href="http://" target="_blank"
+                                    rel="noopener noreferrer">Play</a></li>
+                        </ul>
+                    </div>
+                    <div class="top-list-block top-list-casino">
+                        <h3>Top Casino</h3>
+                        <ul>
+                            <li><img src="/img/spinia-logo.png" alt=""><a class="casino-top-title" href="#">Spinia
+                                    Casino</a><a class="casino-top-btn" href="http://" target="_blank"
+                                    rel="noopener noreferrer">Play</a></li>
+                            <li><img src="/img/bit.png" alt=""><a class="casino-top-title" href="#">Spinia
+                                    Casino</a><a class="casino-top-btn" href="http://" target="_blank"
+                                    rel="noopener noreferrer">Play</a></li>
+                            <li><img src="/img/bit.png" alt=""><a class="casino-top-title" href="#">Spinia
+                                    Casino</a><a class="casino-top-btn" href="http://" target="_blank"
+                                    rel="noopener noreferrer">Play</a></li>
+                            <li><img src="/img/bit.png" alt=""><a class="casino-top-title" href="#">Spinia
+                                    Casino</a><a class="casino-top-btn" href="http://" target="_blank"
+                                    rel="noopener noreferrer">Play</a></li>
+                            <li><img src="/img/bit.png" alt=""><a class="casino-top-title" href="#">Spinia
+                                    Casino</a><a class="casino-top-btn" href="http://" target="_blank"
+                                    rel="noopener noreferrer">Play</a></li>
+                            <li><img src="/img/bit.png" alt=""><a class="casino-top-title" href="#">Spinia
+                                    Casino</a><a class="casino-top-btn" href="http://" target="_blank"
+                                    rel="noopener noreferrer">Play</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+    </div>
+    <footer>
+        <div class="footer-wrapper">
+            <ul>
+                <li>Contact</li>
+                <li>Casino</li>
+                <li>Games</li>
+                <li>Bonuses</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
