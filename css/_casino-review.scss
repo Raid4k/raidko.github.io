@@ -255,15 +255,16 @@
 }
 
 .casino-review-text {
+    p{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        /* or 150% */
+        letter-spacing: 0.1em;
+        color: #333333;
+    }
     margin: 40px 0;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    /* or 150% */
-
-    letter-spacing: 0.1em;
-
-    color: #333333;
+    
 }
