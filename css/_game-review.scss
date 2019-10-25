@@ -95,33 +95,33 @@
                     margin-left: 30px;
                     padding: 5px;
 
-                    &.casino-review-advp {
-                        &:before {
-                            position: absolute;
-                            content: '';
-                            background: url('/img/plus.svg');
-                            background-size: cover;
-                            background-position: center;
-                            height: 15px;
-                            width: 15px;
-                            top: 8px;
-                            left: -20px;
-                        }
-                    }
+                    // &.casino-review-advp {
+                    //     &:before {
+                    //         position: absolute;
+                    //         content: '';
+                    //         background: url('/img/plus.svg');
+                    //         background-size: cover;
+                    //         background-position: center;
+                    //         height: 15px;
+                    //         width: 15px;
+                    //         top: 8px;
+                    //         left: -20px;
+                    //     }
+                    // }
 
-                    &.casino-review-advm {
-                        &:before {
-                            position: absolute;
-                            content: '';
-                            background: url('/img/minus.svg');
-                            background-size: cover;
-                            background-position: center;
-                            height: 15px;
-                            width: 15px;
-                            top: 8px;
-                            left: -20px;
-                        }
-                    }
+                    // &.casino-review-advm {
+                    //     &:before {
+                    //         position: absolute;
+                    //         content: '';
+                    //         background: url('/img/minus.svg');
+                    //         background-size: cover;
+                    //         background-position: center;
+                    //         height: 15px;
+                    //         width: 15px;
+                    //         top: 8px;
+                    //         left: -20px;
+                    //     }
+                    // }
                 }
             }
         }
