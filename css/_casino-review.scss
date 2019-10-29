@@ -217,15 +217,16 @@
             text-transform: uppercase;
 
             img {
-                width: 45px;
-                height: 45px;
-                margin: 1px 10px;
-                border-radius: 45px;
+                width: 30px!important;
+                height: 30px!important;
+                margin: 1px 10px!important;
+                border-radius: unset!important;
+                
             }
 
             .casino-top-title {
                 width: 100%;
-                margin: 0 10px;
+                margin: 0;
                 position: relative;
 
                 &:hover {
