@@ -234,7 +234,18 @@ a {
             transition: .3s;
         }
     }
+    ul{
+        li{
+            text-align: center;
+        }
+    }
 }
 a#scroll-to-top {
 z-index: 99999;
+}
+img{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    pointer-events: none;
 }

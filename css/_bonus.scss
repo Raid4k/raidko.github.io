@@ -1,6 +1,5 @@
 .bonus_page-wrapper {
     display: flex;
-    margin-top: 20px;
 
     @include breakpoint(md-min) {
         flex-direction: column;
@@ -240,12 +239,13 @@
 
                 .bonus-descr {
                     text-transform: uppercase;
-                    color: lightsalmon;
+                    color: $maincolor;
                     font-family: 'Lato';
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 400;
                     mix-blend-mode: normal;
+                    margin-top: 15px;
                     
 
                 }

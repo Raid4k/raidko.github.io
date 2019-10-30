@@ -53,6 +53,7 @@ jQuery(document).ready(function () {
                 jQuery(this).parent().parent().parent().children('.bonus_hidden-info').slideToggle('slow');
                 return false;
             });
+           
        
         
 });
