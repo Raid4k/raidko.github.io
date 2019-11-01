@@ -33,13 +33,12 @@
             flex: 15%;
             margin-right: 10px;
             
-           
-
-
             @include breakpoint (ld-min) {
                 max-width: 100%;
             }
-
+            @include breakpoint (ld-minm) {
+                margin-right: 0;
+            }
 
             .game-item-wrapper {
                 border-radius: 10px;
@@ -63,6 +62,7 @@
 
                 .game-item-title {
                     padding: 20px;
+                    height: 80px;
                     text-align: center;
 
                     h2 {

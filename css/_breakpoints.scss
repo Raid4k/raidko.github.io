@@ -4,6 +4,13 @@
             @content;
         }
     }
+    
+    @else if $point==ld-minm {
+        @media (max-width: 445px) {
+            @content;
+        }
+    }
+
     @else if $point==ld-min {
         @media (max-width: 480px) {
             @content;
