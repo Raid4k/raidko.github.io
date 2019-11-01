@@ -129,7 +129,7 @@
 
         .header_news-btn {
             max-width: 170px;
-            height: 30px;
+            // height: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -138,6 +138,11 @@
             font-size: 13px;
             text-align: center;
             text-transform: uppercase;
+            padding: 5px;
+            position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 100000000;
 
             &:hover {
                 color: $maincolor;
@@ -150,21 +155,24 @@
 
         }
 
+       
         .header_news-left {
+            
             width: 35%;
             height: 450px;
-            background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url(https://www.askgamblers.com/uploads/original_half_size/slide_image/c5/00/70/9db927e89cf87258ac87b67c2197c607bc/ag-casino-video-review-s.png) no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url('/wp-content/uploads/banner1.jpg') no-repeat;
             margin-right: 10px;
+            background-position: 80%;
             background-size: cover;
             position: relative;
             color: #fff;
             display: flex;
             flex-direction: column;
             padding: 15px;
-            // border: 2px solid $maincolor;
             border-radius: 4px;
             box-shadow: 0px 4px 4px rgba(159, 159, 159, 0.25);
             border-radius: 10px;
+           
 
 
             @include breakpoint (md-min) {
@@ -196,12 +204,13 @@
                 display: flex;
                 flex-direction: column;
                 height: 225px;
-                background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url(https://www.askgamblers.com/uploads/original_half_size/slide_image/a0/c3/d8/1c9e8feda1f54a360ac914eb59ffe96fc5/latest-casino-bspin-casino-s.jpg) no-repeat;
+                background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url('/wp-content/uploads/banner2.jpg') no-repeat;
                 background-size: cover;
+                background-position:center;
                 margin-bottom: 10px;
                 box-shadow: 0px 4px 4px rgba(159, 159, 159, 0.25);
                 border-radius: 10px;
-
+                position: relative;
 
             }
 
@@ -222,12 +231,13 @@
                     flex-direction: column;
                     height: 215px;
                     width: 50%;
-                    background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url(https://www.askgamblers.com/uploads/original_half_size/slide_image/25/92/af/8a7165c45cc6ede37158183c14cd66d559/10bbet-team-up-with-the-football-legend-didier-drogba-s.jpg) no-repeat;
+                    background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url('/wp-content/uploads/banner4.jpg') no-repeat;
                     background-size: cover;
+                    background-position: 100%;
                     margin-right: 10px;
                     box-shadow: 0px 4px 4px rgba(159, 159, 159, 0.25);
                     border-radius: 10px;
-
+                    position: relative;
 
 
                 }
@@ -240,11 +250,12 @@
                     flex-direction: column;
                     height: 215px;
                     width: 50%;
-                    background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url(https://www.askgamblers.com/uploads/original_half_size/slide_image/4d/8e/a5/951d7eea84814f867b8e991bb916759c02/askgamblersawards-reminder-to-vote-s.jpg) no-repeat;
+                    background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url('/wp-content/uploads/banner3.jpg') no-repeat;
                     background-size: cover;
+                    background-position: 100%;
                     box-shadow: 0px 4px 4px rgba(159, 159, 159, 0.25);
                     border-radius: 10px;
-
+                    position: relative;
 
                 }
             }
