@@ -1,34 +1,41 @@
 .search-form {
     position: relative;
     height: 57px;
+   
+
     .search-btn {
         border: none;
         outline: 0;
         cursor: pointer;
-        height: 100px;
+        height: 57px;
         width: 70px;
+        
         position: relative;
-        background: none;
+
+        
+
         &:hover {
+            
             transition: background .3s ease;
             filter: grayscale(100%);
         }
+
         &:before {
+
             content: "";
             position: absolute;
-            width: 34px;
-            height: 34px;
-            background: url(../img/bbsearch.svg) no-repeat;
+            width: 24px;
+            height: 24px;
+            background: url(../img/search.svg) no-repeat;
             background-size: cover;
-            background-size: 50%;
-            background-position: 9px;
             margin: 0 auto;
-            top: 34px;
+            top: 17px;
             left: 20px;
-            border: 1px solid #fff;
-            border-radius: 50%;
+           
+
         }
     }
+
     .search-text {
         position: absolute;
         right: 0;
@@ -37,20 +44,23 @@
         border: 1px solid #e2e2e2;
         padding: 10px;
     }
+
     .show-search {
         display: block;
     }
 }
-
 .search-wrapp {
     position: absolute;
     right: 0;
     display: none;
     z-index: 1001;
+
     .search-text {
         padding: 10px 25px 10px 5px;
         font-size: 16px;
+
     }
+
     .search-text-sbmt {
         position: absolute;
         top: 12px;
@@ -61,6 +71,7 @@
         width: 16px;
         border: none;
         cursor: pointer;
+
     }
 }
 
@@ -74,72 +85,93 @@
     background: rgba(0, 0, 0, .8);
     z-index: 1111;
 }
-
 .search-results {
     .page-header {
         margin: 20px 0;
+
         .page-title {
             span {
                 font-family: 'Circe-Exbold';
             }
         }
     }
+
     .site-main {
         padding: 10px;
+
         article {
             margin: 50px 0;
+
             header {
                 h2 {
                     font-family: 'Circe-Exbold';
+                    
                     margin: 10px 0;
-                    a {
+                    a{
                         font-size: 24px;
                     }
                 }
+
                 .entry-meta {
                     margin: 10px 0;
                 }
             }
+
             .post-thumbnail {
                 img {
-                    display: block;
-                    width: 50%;
-                    height: 50%;
+                        display: block;
+    width: 50%;
+    height: 50%;
                 }
             }
+
             .entry-summary {
                 line-height: 1.56;
                 margin: 10px 0;
             }
+
             .entry-footer {
                 span {
-                    margin-right: 10px;
+                   
+                        margin-right: 10px;
+                   
+
                 }
             }
         }
     }
 }
 
+
 .mobile-menu {
     @include breakpoint(md-min) {
         display: block;
+
     }
+
     display: none;
+
     .burger-btn {
         border: none;
         outline: 0;
         cursor: pointer;
         height: 57px;
         width: 70px;
+        
         position: relative;
         display: block;
+        
+       
+
         &:hover {
+            
             transition: background .3s ease;
         }
-        &:active {
-            background: #fff;
+        &:active{
+            background:#fff;
             transition: background .3s ease;
         }
+
         &:before {
             content: "";
             position: absolute;
@@ -150,11 +182,14 @@
             margin: 0 auto;
             top: 16px;
             left: 27px;
+            
         }
     }
 }
 
 .mobile-nav {
+
+    
     height: 100%;
     width: 100%;
     display: none;
@@ -164,13 +199,18 @@
     transition: margin-top .5s;
     background-color: rgba(147, 0, 0, 0.9);
     border: 2px solid rgb(156, 12, 41);
+
+
+
     ul {
         li {
             height: 50px;
             border-bottom: 2px solid rgb(156, 12, 41);
+
             &:hover {
                 background-color: rgba(247, 247, 247, 0.9);
             }
+
             a {
                 display: block;
                 width: 100%;
@@ -180,7 +220,11 @@
                 color: #fff;
                 text-shadow: #000 1px 1px 1px;
                 line-height: 50px;
+
+
             }
         }
     }
+
+
 }

@@ -1,112 +1,135 @@
 .main-casino {
+
     .main-casino-wrapper {
         display: flex;
         width: 100%;
+        
+
         @include breakpoint(md-min) {
             flex-direction: column;
             max-height: unset;
+
             .main-casino-list {
                 margin-right: 0px;
                 margin-bottom: 20px;
             }
+
             .top-list-block.top-list-casino {
                 max-width: 100%;
             }
+
         }
+
         .main-casino-list {
+
+
             border-radius: 4px;
             position: relative;
             width: 100%;
             // margin-right: 10px;
+
             @include breakpoint(md-min) {
+
                 margin-right: 0px;
                 margin-bottom: 20px;
+
                 .top-list-block.top-list-casino {
                     max-width: 100%;
                 }
+
             }
+
+
+
             .see-all-btn {
-                color: #CBCFD4;
+                color: $maincolor;
                 position: absolute;
                 right: 30px;
                 top: 0;
                 padding: 5px 10px;
                 letter-spacing: .05em;
                 text-transform: uppercase;
-                &:before {
-                    content: '';
-                    position: absolute;
-                    display: block;
-                    bottom: 0;
-                    left: 9px;
-                    width: 0;
-                    height: 1px;
-                    background: linear-gradient(90deg, #F27A54 0%, #A154F2 186.42%);
-                }
+
                 &:after {
                     content: '';
                     position: absolute;
                     right: -5px;
-                    top: 7px;
+                    top: 5px;
                     background: url('../img/arrow.svg');
                     background-size: cover;
                     width: 12px;
                     height: 12px;
+
+
                 }
+
                 &:hover {
+                    color: #000;
+
                     &:after {
                         filter: grayscale(100%);
                     }
-                    &:before {
-                        width: 100%;
-                        transition: width .3s;
-                    }
                 }
+
             }
+
             h3 {
+
                 line-height: 32px;
                 text-align: left;
                 padding-left: 20px;
                 text-transform: uppercase;
-                color: #CBCFD4;
+                color: #000;
                 letter-spacing: .1em;
                 text-transform: uppercase;
             }
+
             >ul {
                 display: flex;
                 justify-content: stretch;
+                
                 flex-wrap: wrap;
+                
+               
+                
+
                 li {
                     display: flex;
                     align-items: center;
-                    margin: 8px 8px 0px 0px;
+                    margin:8px 8px 0px 0px;
                     box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
                     border-radius: 10px;
-                    background: #3C444C;
-                    mix-blend-mode: normal;
-                    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
-                    border-radius: 0px;
+                    background: #ffffff;
                     max-height: 130px;
                     width: 49%;
                     min-width: 320px;
-                    &:nth-child(2n+2) {
+
+                    &:nth-child(2n+2){
                         margin-right: 0;
                     }
-                    @include breakpoint (xlg99-min) {
+                    
+                    @include breakpoint (xlg99-min ){
                         width: 98%;
-                        margin: 5px 10px 0px 0px;
+                        margin:5px 10px 0px 0px;
                     }
-                    @include breakpoint (lg-min) {
+                    @include breakpoint (lg-min ){
                         margin: 5px 0 0 0;
+                        
+                       
                     }
-                    @include breakpoint (md-min) {
+                    @include breakpoint (md-min ){
                         width: 100%;
                     }
+                    
+                    
+
                     img {
                         max-width: 130px;
                         max-height: 130px;
+                        border-radius: 10px 0px 0px 10px;
+
                     }
-                    .casino-text-btn {
+                    .casino-text-btn{
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -114,21 +137,27 @@
                         width: 100%;
                     }
                     p {
+                        
                         margin: 0 10px 20px 10px;
                         padding: 0 10px;
                         text-align: center;
                         width: 100%;
                         text-transform: uppercase;
-                        color: #CBCFD4;
+                        
                     }
+
                     .casino-list-btn {
                         display: flex;
+
                         a {
+
+
                             width: 100%;
                             width: 80px;
                             margin-right: 10px;
-                            background: linear-gradient(90deg, #A154F2 0%, #F27A54 100%);
-                            // border-radius: 40px;
+                            border: 1px solid $maincolor;
+                            background: $maincolor;
+                            border-radius: 40px;
                             line-height: 28px;
                             padding-top: 3px;
                             text-align: center;
@@ -136,18 +165,21 @@
                             color: #fff;
                             margin-bottom: 10px;
                             font-size: 12px;
+
+
                             &:hover {
-                                background: linear-gradient(90deg, #F27A54 0%,#A154F2 100% );
-                                
-                                box-shadow: 0px 0px 2px 0px #000;
-                                
+                                background: #fff;
+                                color: $maincolor;
+                                transition: .3s;
                             }
                         }
                     }
+
                 }
             }
         }
     }
+
     // .top-list-block.top-list-casino {
     //     background: #fff;
     //     box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
@@ -157,9 +189,13 @@
     //     min-width: 350px;
     //     width: 100%;
     //     max-height: 450px;
-    //     @include breakpoint(md-min) {
+        
+    //     @include breakpoint(md-min){
     //         width: 100%;
     //     }
+
+
+
     //     h3 {
     //         background: $maincolor;
     //         border-radius: 10px 10px 0px 0px;
@@ -173,29 +209,35 @@
     //         text-transform: uppercase;
     //         text-align: center;
     //     }
+
     //     ul {
     //         display: flex;
     //         flex-direction: column;
+
     //         li {
     //             display: flex;
     //             align-items: center;
     //             justify-content: space-between;
     //             padding: 9px 0;
     //             text-transform: uppercase;
+
     //             img {
     //                 width: 45px;
     //                 height: 45px;
     //                 margin: 1px 10px;
     //                 border-radius: 45px;
     //             }
+
     //             .casino-top-title {
     //                 width: 40%;
     //                 margin: 0 10px;
     //                 position: relative;
+
     //                 &:hover {
     //                     text-decoration: underline;
     //                 }
     //             }
+
     //             .casino-top-btn {
     //                 width: 100%;
     //                 max-width: 120px;
@@ -208,11 +250,15 @@
     //                 text-align: center;
     //                 text-transform: uppercase;
     //                 color: #fff;
+
+
     //                 &:hover {
     //                     background: #fff;
     //                     color: $maincolor;
     //                 }
     //             }
+
+
     //         }
     //     }
     // }

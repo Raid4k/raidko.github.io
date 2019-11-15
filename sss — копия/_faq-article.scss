@@ -1,10 +1,16 @@
 .faq-article {
     position: relative;
+
     .faq-article_wrapper {
-       
-        box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
+        border-radius: 10px;
+        border-radius: 4px;
         position: relative;
+
+
     }
+
     .collapse_btn {
         color: $maincolor;
         background-color: #fff;
@@ -12,33 +18,34 @@
         right: 0;
         top: 0;
         padding: 5px 10px;
+        border-radius: 4px;
         border: 2px solid $maincolor;
         text-shadow: #000 1px 1px 1px;
         letter-spacing: .05em;
         text-transform: uppercase;
         cursor: pointer;
-        display: none;
+
+
+
     }
-    ul {
-        padding: 15px;
-        background: #3C444C;
-        mix-blend-mode: normal;
-        box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
-        border-radius: 0px;
+
+    ul {padding: 15px;
         li {
             padding: 5px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            color: #CBCFD4;
+            font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    
         }
     }
-    ol {
-        li {
+    ol{
+        li{
             list-style-type: disc;
         }
     }
+
     h3.common-article_title {
-        background: linear-gradient(90deg, rgba(161, 84, 242, 0) 0%, #A154F2 0.01%, #F27A54 100%);
+        background: $maincolor;
+        border-radius: 10px 10px 0px 0px;
         line-height: 32px;
         text-align: left;
         padding: 12px;
@@ -49,6 +56,7 @@
         text-transform: uppercase;
         text-align: center;
     }
+
     h4 {
         margin: 10px 0;
     }

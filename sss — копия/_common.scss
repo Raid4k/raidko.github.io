@@ -104,7 +104,7 @@ a {
     .common-article_wrapper {
         background: #fff;
         box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
-        // border-radius: 10px;
+        border-radius: 10px;
         transition: box-shadow .4s ease-out;
         border-radius: 4px;
         position: relative;
@@ -132,7 +132,7 @@ a {
     }
     h3.common-article_title {
         background: $maincolor;
-        // border-radius: 10px 10px 0px 0px;
+        border-radius: 10px 10px 0px 0px;
         line-height: 32px;
         text-align: left;
         padding: 12px;
@@ -214,17 +214,6 @@ a {
     max-width: 400px;
     min-width: 400px;
     width: 100%;
-    &.recent-nws{
-        
-        .casino-top-title{
-            overflow: hidden;
-            display: block;
-            display: -webkit-box;
-            text-overflow: ellipsis;
-            -webkit-line-clamp: 2; /* количество строк */
-            -webkit-box-orient: vertical;
-        }
-    }
     @include breakpoint(md-min) {
         width: 100%;
         max-width: 100%;
@@ -258,15 +247,6 @@ a {
                 height: 45px;
                 margin: 1px 10px;
             }
-            .recent-img {
-                                width: 45px;
-                                height: 45px;
-                                background-size: cover !important;
-                                background-position: center !important;
-                                background-repeat: no-repeat !important;
-                                border-radius: 10px;
-                                margin-left: 10px;
-                            }
             .casino-top-title {
                 width: 40%;
                 margin: 0 10px;
@@ -280,20 +260,19 @@ a {
                 max-width: 120px;
                 margin-right: 10px;
                 border: none!important;
-                // box-shadow: 0px 0px 1px 1px #CBCFD4;
+                box-shadow: 0px 0px 1px 1px #CBCFD4;
                 background: linear-gradient(90deg, #A154F2 0%, #F27A54 100%)!important;
-                // border-radius: 40px;
+                border-radius: 40px;
                 line-height: 28px;
                 padding-top: 3px;
                 text-align: center;
                 text-transform: uppercase;
                 color: #fff;
-                
                 &:hover {
-                    background: linear-gradient(90deg, #F27A54 0%,#A154F2 100% )!important;
-                    
+                    background: #fff!important;
+                    color: $maincolor;
                     box-shadow: 0px 0px 2px 0px #000;
-                    
+                    transition: .1s;
                 }
             }
         }
@@ -309,9 +288,4 @@ img {
     -moz-user-select: none;
     user-select: none;
     pointer-events: none;
-}
-.malinky-ajax-pagination-loading{
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
 }

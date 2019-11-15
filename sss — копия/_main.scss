@@ -1,11 +1,13 @@
+
 main {
     min-height: calc(100vh - 200px);
     z-index: 999;
-    margin-top: 60px;
+    margin-top: 20px;
+    
     @import 'header-news.scss';
     @import 'main-casino.scss';
     @import 'main-bonus.scss';
     @import 'main-news.scss';
     @import 'faq-article.scss';
     @import 'gambling-article.scss';
-}
+    }

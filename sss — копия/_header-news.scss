@@ -2,11 +2,11 @@
     width: 100%;
     max-width: 100vw;
     display: flex;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
+
     @include breakpoint (md-min) {
         flex-direction: column;
     }
+
     // .top-list-block.top-list-casino {
     //     background: #fff;
     //     box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
@@ -16,10 +16,15 @@
     //     min-width: 350px;
     //     width: 100%;
     //     max-height: 450px;
+        
+
     //     @include breakpoint(md-min){
     //         width: 100%;
     //         max-width: 100%;
     //     }
+
+
+
     //     h3 {
     //         background: $maincolor;
     //         border-radius: 10px 10px 0px 0px;
@@ -33,29 +38,35 @@
     //         text-transform: uppercase;
     //         text-align: center;
     //     }
+
     //     ul {
     //         display: flex;
     //         flex-direction: column;
+
     //         li {
     //             display: flex;
     //             align-items: center;
     //             justify-content: space-between;
     //             padding: 9px 0;
     //             text-transform: uppercase;
+
     //             img {
     //                 width: 45px;
     //                 height: 45px;
     //                 margin: 1px 10px;
     //                 border-radius: 45px;
     //             }
+
     //             .casino-top-title {
     //                 width: 40%;
     //                 margin: 0 10px;
     //                 position: relative;
+
     //                 &:hover {
     //                     text-decoration: underline;
     //                 }
     //             }
+
     //             .casino-top-btn {
     //                 width: 100%;
     //                 max-width: 120px;
@@ -68,40 +79,54 @@
     //                 text-align: center;
     //                 text-transform: uppercase;
     //                 color: #fff;
+
+
     //                 &:hover {
     //                     background: #fff;
     //                     color: $maincolor;
     //                 }
     //             }
+
+
     //         }
     //     }
     // }
+
     .header_news-wrapper {
         display: flex;
         margin-right: 20px;
         width: 100%;
-        overflow: hidden;
+
         @include breakpoint (md-min) {
             flex-wrap: wrap;
             transition: flex-wrap .4s ease-out;
             margin-right: 0;
             margin-bottom: 20px;
         }
+
         .header_news-cat {
             font-size: 12px;
             margin-bottom: 2%;
+
         }
+
         .header_news-title {
             font-size: 16px;
             margin-bottom: 1%;
         }
+
         .header_news-descr {
             margin-bottom: 5%;
         }
+
         .header_news-cat,
         .header_news-title {
             text-transform: uppercase;
+
         }
+
+
+
         .header_news-btn {
             max-width: 170px;
             // height: 30px;
@@ -109,36 +134,47 @@
             justify-content: center;
             align-items: center;
             border: 1px solid #fff;
-            // border-radius: 20px;
+            border-radius: 20px;
             font-size: 13px;
             text-align: center;
             text-transform: uppercase;
             padding: 5px;
             position: absolute;
-            left: 10px;
-            bottom: 10px;
-            z-index: 100000000;
+    left: 10px;
+    bottom: 10px;
+    z-index: 100000000;
+
             &:hover {
-                
-                background: linear-gradient(90deg, #A154F2 0%, #F27A54 100%);
-               
+                color: $maincolor;
+                background: #fff;
+
+                transition: background-color .4s, color .4s;
+
+
             }
+
         }
+
+       
         .header_news-left {
+            
             width: 35%;
             height: 450px;
-            background:url('/wp-content/uploads/banner1.jpg') no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url('/wp-content/uploads/banner1.jpg') no-repeat;
             margin-right: 10px;
             background-position: 80%;
             background-size: cover;
             position: relative;
-            // color: #fff;
+            color: #fff;
             display: flex;
             flex-direction: column;
             padding: 15px;
-            // border-radius: 4px;
-            box-shadow: 0px 30px 40px rgba(0,0,0,0.3);
-            // border-radius: 10px;
+            border-radius: 4px;
+            box-shadow: 0px 4px 4px rgba(159, 159, 159, 0.25);
+            border-radius: 10px;
+           
+
+
             @include breakpoint (md-min) {
                 width: 100%;
                 height: 280px;
@@ -146,132 +182,84 @@
                 margin-bottom: 20px;
                 transition: margin-bottom .4s ease-out;
             }
-            h1{
-                overflow: hidden;
-            display: block;
-            display: -webkit-box;
-            text-overflow: ellipsis;
-            -webkit-line-clamp: 2; /* количество строк */
-            -webkit-box-orient: vertical;
-            }
-         p{
-            overflow: hidden;
-            display: block;
-            display: -webkit-box;
-            text-overflow: ellipsis;
-            -webkit-line-clamp: 4; /* количество строк */
-            -webkit-box-orient: vertical;
-           
-         }
+
+
+
         }
+
         .header_news-right {
             width: 65%;
             max-height: 450px;
-            // color: #fff;
+            color: #fff;
+
             @include breakpoint (md-min) {
                 width: 100%;
             }
+
             .header_news-right-top {
                 padding: 15px;
                 // border: 2px solid $maincolor;
-                // border-radius: 4px;
-                // background: blue;
+                border-radius: 4px;
+                background: blue;
                 display: flex;
                 flex-direction: column;
                 height: 225px;
-                background:url('/wp-content/uploads/banner2.jpg') no-repeat;
+                background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url('/wp-content/uploads/banner2.jpg') no-repeat;
                 background-size: cover;
-                background-position: center;
+                background-position:center;
                 margin-bottom: 10px;
-                // box-shadow: 0px 4px 4px rgba(159, 159, 159, 0.25);
-                // border-radius: 10px;
+                box-shadow: 0px 4px 4px rgba(159, 159, 159, 0.25);
+                border-radius: 10px;
                 position: relative;
-                h1{
-                    overflow: hidden;
-                display: block;
-                display: -webkit-box;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 2; /* количество строк */
-                -webkit-box-orient: vertical;
-                }
-             p{
-                overflow: hidden;
-                display: block;
-                display: -webkit-box;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 3; /* количество строк */
-                -webkit-box-orient: vertical;
-               
-             }
+
             }
+
             .header_news-right-bottom {
+
                 display: flex;
+
+
+
+
+
+
                 .header_news-right-bottom-r {
                     padding: 10px;
                     // border: 2px solid $maincolor;
-                    // border-radius: 4px;
+                    border-radius: 4px;
                     display: flex;
                     flex-direction: column;
                     height: 215px;
                     width: 50%;
-                    background:url('/wp-content/uploads/banner4.jpg') no-repeat;
+                    background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url('/wp-content/uploads/banner4.jpg') no-repeat;
                     background-size: cover;
                     background-position: 100%;
                     margin-right: 10px;
-                    box-shadow: 0px 30px 40px rgba(0,0,0,0.3);
-                    // border-radius: 10px;
+                    box-shadow: 0px 4px 4px rgba(159, 159, 159, 0.25);
+                    border-radius: 10px;
                     position: relative;
-                    h1{
-                        overflow: hidden;
-                    display: block;
-                    display: -webkit-box;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 2; /* количество строк */
-                    -webkit-box-orient: vertical;
-                    }
-                 p{
-                    overflow: hidden;
-                    display: block;
-                    display: -webkit-box;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 3; /* количество строк */
-                    -webkit-box-orient: vertical;
-                   
-                 }
+
+
                 }
+
                 .header_news-right-bottom-l {
                     padding: 10px;
                     // border: 2px solid $maincolor;
-                    // border-radius: 4px;
+                    border-radius: 4px;
                     display: flex;
                     flex-direction: column;
                     height: 215px;
                     width: 50%;
-                    background:url('/wp-content/uploads/banner3.jpg') no-repeat;
+                    background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.068)), linear-gradient(to right, rgba(6, 1, 12, 0.623), rgba(3, 3, 3, 0.171)), url('/wp-content/uploads/banner3.jpg') no-repeat;
                     background-size: cover;
                     background-position: 100%;
-                    box-shadow: 0px 30px 40px rgba(0,0,0,0.3);
-                    // border-radius: 10px;
+                    box-shadow: 0px 4px 4px rgba(159, 159, 159, 0.25);
+                    border-radius: 10px;
                     position: relative;
-                    h1{
-                        overflow: hidden;
-                    display: block;
-                    display: -webkit-box;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 2; /* количество строк */
-                    -webkit-box-orient: vertical;
-                    }
-                 p{
-                    overflow: hidden;
-                    display: block;
-                    display: -webkit-box;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 3; /* количество строк */
-                    -webkit-box-orient: vertical;
-                   
-                 }
+
                 }
             }
         }
     }
+
 }

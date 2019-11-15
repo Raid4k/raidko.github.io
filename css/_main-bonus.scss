@@ -1,166 +1,137 @@
 .main-bonus {
-
     .main-bonus-wrapper {
         display: flex;
         width: 100%;
-        
         @include breakpoint(md-min) {
             max-height: 100%;
             flex-direction: column;
             .top-list-block.top-list-bonus {
                 max-width: 100%;
             }
-    
         }
-
         .main-bonus-list {
             border-radius: 4px;
             position: relative;
             width: 100%;
-            
             @include breakpoint(md-min) {
                 margin-right: 0px;
                 margin-bottom: 20px;
-            
             }
-
             .see-all-btn {
-                color: $maincolor;
+                color: #CBCFD4;
                 position: absolute;
                 right: 30px;
                 top: 0;
                 padding: 5px 10px;
                 letter-spacing: .05em;
                 text-transform: uppercase;
-
+                &:before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    bottom: 0;
+                    left: 9px;
+                    width: 0;
+                    height: 1px;
+                    background: linear-gradient(90deg, #F27A54 0%, #A154F2 186.42%);
+                }
                 &:after {
                     content: '';
                     position: absolute;
                     right: -5px;
-                    top: 5px;
+                    top: 7px;
                     background: url('../img/arrow.svg');
                     background-size: cover;
                     width: 12px;
                     height: 12px;
-
-
                 }
-
                 &:hover {
-                    color: #000;
-
                     &:after {
                         filter: grayscale(100%);
                     }
+                    &:before {
+                        width: 100%;
+                        transition: width .3s;
+                    }
                 }
-
             }
-
             h3 {
                 line-height: 32px;
                 text-align: left;
                 padding-left: 20px;
                 text-transform: uppercase;
-                color: #000;
+                color: #CBCFD4;
                 letter-spacing: .1em;
                 text-transform: uppercase;
-
             }
-
             .main-bonus-list-wrapper {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
-                
-                
-
-
                 ul {
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content:stretch;
-                    
-                   
-
+                    justify-content: stretch;
                     li {
-                    
-                      
                         display: flex;
                         align-items: center;
-                        margin:8px 8px 0px 0px;
-                        box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
-                        border-radius: 10px;
-                        background: #ffffff;
+                        margin: 8px 8px 0px 0px;
+                        background: #3C444C;
+                        mix-blend-mode: normal;
+                        box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
+                        border-radius: 0px;
                         max-height: 130px;
                         width: 49%;
                         min-width: 320px;
-    
-                        &:nth-child(2n+2){
+                        &:nth-child(2n+2) {
                             margin-right: 0;
                         }
-                        
-                        @include breakpoint (xlg99-min ){
+                        @include breakpoint (xlg99-min) {
                             width: 98%;
-                            margin:5px 10px 0px 0px;
+                            margin: 5px 10px 0px 0px;
                         }
-                        @include breakpoint (lg-min ){
+                        @include breakpoint (lg-min) {
                             margin: 5px 0 0 0;
-                            
-                           
                         }
-                        @include breakpoint (md-min ){
+                        @include breakpoint (md-min) {
                             width: 100%;
                         }
-                    
-
-                    
-                    .bonus-list-item-wrapper{
-                        display: flex;
-                        align-items: center;
-                        flex-direction: column;
-                        justify-content: center;
-                        width: 100%;
-                    
-                    
-                    }
-                       
-                    @include breakpoint(md-min) {
-                        margin-left: 0;
-                    }
+                        .bonus-list-item-wrapper {
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            justify-content: center;
+                            width: 100%;
+                        }
+                        @include breakpoint(md-min) {
+                            margin-left: 0;
+                        }
                         img {
                             max-width: 130px;
                             max-height: 130px;
-                            border-radius: 10px 0px 0px 10px;
-                            
-    
                         }
-
                         p {
                             max-width: 100%;
                             margin: 0 15px 0 0;
                             padding: 5px;
                             text-align: center;
                             text-transform: uppercase;
+                            color: #CBCFD4;
                         }
-                        p.bonus-info{
-                            color: $maincolor;
+                        p.bonus-info {
+                            color:#A154F2 ;
                         }
-                       
-
                         .bonus-list-btn {
                             display: flex;
                             justify-content: center;
                             min-width: 10%;
                             margin-top: 10px;
                             a {
-
-
                                 width: 100%;
                                 width: 100px;
                                 margin-right: 10px;
-                                border: 1px solid $maincolor;
-                                background: $maincolor;
-                                border-radius: 40px;
+                                background: linear-gradient(90deg, #A154F2 0%, #F27A54 100%);
+                                // border-radius: 40px;
                                 line-height: 28px;
                                 padding-top: 3px;
                                 text-align: center;
@@ -168,12 +139,11 @@
                                 color: #fff;
                                 margin-bottom: 10px;
                                 font-size: 12px;
-    
-    
                                 &:hover {
-                                    background: #fff;
-                                    color: $maincolor;
-                                    transition: .3s;
+                                    background: linear-gradient(90deg, #F27A54 0%,#A154F2 100% )!important;
+                                    
+                                    box-shadow: 0px 0px 2px 0px #000;
+                                    
                                 }
                             }
                         }
@@ -182,88 +152,73 @@
             }
         }
     }
-
-    .top-list-block.top-list-casino {
-        background: #fff;
-        box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
-        border-radius: 10px;
-        position: relative;
-      
-        max-height: 450px;
-        max-width: 400px;
-        min-width: 350px;
-        width: 100%;
-        @include breakpoint(md-min){
-            width: 100%;
-            max-width: 100%;
-        }
-
-
-
-        h3 {
-            background: $maincolor;
-            border-radius: 10px 10px 0px 0px;
-            line-height: 32px;
-            text-align: left;
-            padding: 12px;
-            text-transform: uppercase;
-            color: #fff;
-            text-shadow: #000 1px 1px 1px;
-            letter-spacing: .1em;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        ul {
-            display: flex;
-            flex-direction: column;
-
-            li {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 9px 0;
-                text-transform: uppercase;
-
-                img {
-                    width: 45px;
-                    height: 45px;
-                    margin: 1px 10px;
-                    border-radius: 45px;
-                }
-
-                .casino-top-title {
-                    width: 40%;
-                    margin: 0 10px;
-                    position: relative;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-
-                .casino-top-btn {
-                    width: 100%;
-                    max-width: 120px;
-                    margin-right: 10px;
-                    border: 1px solid $maincolor;
-                    background: $maincolor;
-                    border-radius: 40px;
-                    line-height: 28px;
-                    padding-top: 3px;
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: #fff;
-
-
-                    &:hover {
-                        background: #fff;
-                        color: $maincolor;
-                    }
-                }
-
-
-            }
-        }
-    }
+    // .top-list-block.top-list-casino {
+    //     background: #fff;
+    //     box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
+    //     border-radius: 10px;
+    //     position: relative;
+    //     max-height: 450px;
+    //     max-width: 400px;
+    //     min-width: 350px;
+    //     width: 100%;
+    //     @include breakpoint(md-min) {
+    //         width: 100%;
+    //         max-width: 100%;
+    //     }
+    //     h3 {
+    //         background: $maincolor;
+    //         border-radius: 10px 10px 0px 0px;
+    //         line-height: 32px;
+    //         text-align: left;
+    //         padding: 12px;
+    //         text-transform: uppercase;
+    //         color: #fff;
+    //         text-shadow: #000 1px 1px 1px;
+    //         letter-spacing: .1em;
+    //         text-transform: uppercase;
+    //         text-align: center;
+    //     }
+    //     ul {
+    //         display: flex;
+    //         flex-direction: column;
+    //         li {
+    //             display: flex;
+    //             align-items: center;
+    //             justify-content: space-between;
+    //             padding: 9px 0;
+    //             text-transform: uppercase;
+    //             img {
+    //                 width: 45px;
+    //                 height: 45px;
+    //                 margin: 1px 10px;
+    //                 border-radius: 45px;
+    //             }
+    //             .casino-top-title {
+    //                 width: 40%;
+    //                 margin: 0 10px;
+    //                 position: relative;
+    //                 &:hover {
+    //                     text-decoration: underline;
+    //                 }
+    //             }
+    //             .casino-top-btn {
+    //                 width: 100%;
+    //                 max-width: 120px;
+    //                 margin-right: 10px;
+    //                 border: 1px solid $maincolor;
+    //                 background: $maincolor;
+    //                 border-radius: 40px;
+    //                 line-height: 28px;
+    //                 padding-top: 3px;
+    //                 text-align: center;
+    //                 text-transform: uppercase;
+    //                 color: #fff;
+    //                 &:hover {
+    //                     background: #fff;
+    //                     color: $maincolor;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }

@@ -2,144 +2,167 @@
     position: fixed;
     width: 100%;
     max-width: 1920px;
-    background: #3C444C;
-    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
-    max-height: 100px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
+    max-height: 60px;
     z-index: 1000;
-    
+
     @import 'searchandmobile';
+
     nav.navigation {
         padding: 0 30px;
         width: 100%;
-       
+
         ul {
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+
+
             @include breakpoint(md-min) {
                 justify-content: space-between;
             }
+
             li {
-                height: 100px;
-                position: relative;
-                &:not(:last-child):after {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    right: 0;
-                    bottom: 0;
-                    height: 100%;
-                    width: 1px;
-                    background: #30363D;
-                }
+
+
+
                 a {
                     position: relative;
-                    line-height: 100px;
+                    line-height: 58px;
                     display: block;
                     width: 100%;
                     height: 100%;
-                    color: #fff;
+                    color: #000;
+                    font-family: 'Lato';
                     font-weight: 400;
                     text-transform: uppercase;
                     transition: color .3s ease-out;
                     letter-spacing: .1px;
+
                     &:before {
                         content: '';
                         display: block;
                         position: absolute;
                         left: -35px;
-                        top: 34px;
+                        top: 12px;
                         width: 100%;
                         height: 30px;
                         background-repeat: no-repeat;
                         background-size: contain;
                     }
                 }
+
                 &.nav_burger {
                     display: none;
                 }
+
                 @include breakpoint(md-min) {
                     &.nav_burger {
                         display: block;
                     }
                 }
+
                 &:not(.nav_un) {
                     @include breakpoint(md-min) {
                         display: none;
                     }
                 }
+
                 &.logo_nav {
+
                     background-image: url(/wp-content/uploads/bblogo.svg);
-                    height: 100px;
+                    height: 57px;
                     max-width: 150px;
                     margin-right: 15px;
                     width: 100%;
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: contain;
-                    &:after {
-                        display: none;
-                    }
-                    @include breakpoint(md-min) {
+                    @include breakpoint(md-min){
                         margin-right: 0;
                     }
                     &:hover {
                         background-image: url(/wp-content/uploads/bblogo2.svg);
-                        transition: all .3s;
+                        transition: all 1s;
                     }
+
                 }
+
                 &.nav_un {}
+
                 &.home_nav {
                     a {
                         &:before {
-                            background-image: url(../img/bbhome.svg);
+                            background-image: url(../img/home.svg);
+
                         }
                     }
                 }
+
                 &.news_nav {
                     a {
                         &:before {
-                            background-image: url(../img/bbnews.svg);
+                            background-image: url(../img/news.svg);
+
                         }
                     }
                 }
+
                 &.casino_nav {
                     a {
                         &:before {
-                            background-image: url(../img/bbcasino.svg);
+                            background-image: url(../img/casino.svg);
+
                         }
                     }
                 }
+
                 &.games_nav {
                     a {
                         &:before {
-                            background-image: url(../img/bbgames.svg);
+                            background-image: url(../img/games.svg);
+
                         }
                     }
                 }
+
                 &.bonus_nav {
                     a {
                         &:before {
-                            background-image: url(../img/bbbonuses.svg);
+                            background-image: url(../img/bonus.svg);
+
                         }
                     }
                 }
+
                 &.about_nav {
                     a {
                         &:before {
-                            background-image: url(../img/bbabout.svg);
+                            background-image: url(../img/about.svg);
+
                         }
                     }
                 }
+
+
+
                 &:hover,
                 &:active,
                 &:focus {
+
                     a {
-                        color: #CBCFD4;
+                        color: $maincolor;
                         filter: grayscale(100%);
+
                     }
                 }
+
+
+
             }
         }
+
     }
 }
