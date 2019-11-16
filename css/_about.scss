@@ -4,7 +4,7 @@
     h1 {
         text-align: center;
         text-transform: uppercase;
-        color: $maincolor;
+        color: #A154F2;
         font-size: 42px;
         
     }
@@ -12,7 +12,7 @@
     h2 {
         text-align: center;
         text-transform: uppercase;
-        color: $maincolor;
+        color: #A154F2;
         margin-top: 20px;
        
     }
@@ -24,18 +24,18 @@
 
 
         .about-desc {
-            background: #fff;
+            background: #3C444C;
             min-height: 20vh;
             display: block;
             width: 100%;
             margin-top: 20px;
             margin-right: 10px;
-            font-size: 26px;
-            border-radius: 10px;
+            font-size: 24px;
+            color:#CBCFD4;
             padding: 10px;
             text-align: center;
-            font-family: 'Rubik';
-    font-weight: 300;
+            
+    
         }
 
         .about-contact {
@@ -43,8 +43,8 @@
             text-align: center;
             font-size: 1.2rem;
             text-transform: uppercase;
-            color: #930000;
-            text-shadow: 0px 0px 3px #930000;
+            color: #F27A54 ;
+            text-shadow: 0px 0px 3px #F27A54 ;
             
            
 

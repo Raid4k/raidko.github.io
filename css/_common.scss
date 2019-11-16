@@ -212,8 +212,9 @@ a {
     position: relative;
     max-height: 450px;
     max-width: 400px;
-    min-width: 400px;
+   
     width: 100%;
+    
     &.recent-nws{
         
         .casino-top-title{
@@ -228,6 +229,7 @@ a {
     @include breakpoint(md-min) {
         width: 100%;
         max-width: 100%;
+       
     }
     h3 {
         background: linear-gradient(90deg, rgba(161, 84, 242, 0) 0%, #A154F2 0.01%, #F27A54 100%);
@@ -236,7 +238,7 @@ a {
         text-align: left;
         padding: 12px;
         text-transform: uppercase;
-        color: #fff;
+        color: #CBCFD4;
         text-shadow: #000 1px 1px 1px;
         letter-spacing: .1em;
         text-transform: uppercase;
@@ -245,6 +247,20 @@ a {
     ul {
         display: flex;
         flex-direction: column;
+        .recent-img-wrap{
+            .recent-img {
+                width: 45px;
+                height: 45px;
+                background-size: cover !important;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+                
+                margin-left: 10px;
+            }
+            .casino-top-title{
+                width: 50%;
+            }
+        }
         li {
             display: flex;
             align-items: center;
@@ -258,21 +274,27 @@ a {
                 height: 45px;
                 margin: 1px 10px;
             }
-            .recent-img {
-                                width: 45px;
-                                height: 45px;
-                                background-size: cover !important;
-                                background-position: center !important;
-                                background-repeat: no-repeat !important;
-                                border-radius: 10px;
-                                margin-left: 10px;
-                            }
+            
             .casino-top-title {
-                width: 40%;
+                // width: 40%;
                 margin: 0 10px;
                 position: relative;
-                &:hover {
-                    text-decoration: underline;
+                &:after{
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background: linear-gradient(90deg, #A154F2 0%, #F27A54 100%);
+                    transition: width .3s;
+                }
+                &:hover,
+                &:focus,
+                &:active {
+                    &:after{
+                        width: 100%;
+                    }
                 }
             }
             .casino-top-btn {

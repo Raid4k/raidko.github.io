@@ -44,19 +44,19 @@
 
 
             .news-item-wrapper {
-                border-radius: 10px;
-                background: #fff;
-                box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
+                background: #3C444C;
+                mix-blend-mode: normal;
+                box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
                 min-height: 350px;
 
                 .news-item-img {
-                    border-bottom: 1px solid grey;
+                    
                     display: flex;
                     justify-content: center;
                     background-size: cover !important;
                     background-repeat: no-repeat !important;
                     background-position: center !important;
-                    border-radius: 10px 10px 0 0;
+                    
                     height: 150px;
 
                     img {
@@ -64,8 +64,9 @@
                         max-height: 180px;
                         max-width: 250px;
                         width: 100%;
-                        border-radius: 50%;
-                        padding: 20px;
+                        border: 1px solid #F27A54;
+                        border-top: 1px solid #A154F2;  
+                        border-bottom:1px solid #A154F2;
                     }
                 }
 
@@ -79,7 +80,7 @@
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
-
+                        color: #CBCFD4;
 
 
                     }
@@ -95,7 +96,7 @@
                         max-height: 95px;
                         line-height: 1.2rem;
                         overflow: hidden;
-
+                        color: #CBCFD4;
                     }
                 }
 
@@ -114,20 +115,16 @@
                         display: block;
                         outline: none;
                         cursor: pointer;
-                        border-radius: 40px;
-                        background: #044aca;
+                       
                         width: 100%;
                         text-align: center;
                         text-transform: uppercase;
                         color: #fff;
                         line-height: 14px;
-                        border: 1px solid $maincolor;
-                        background: $maincolor;
+                        background: linear-gradient(90deg, #A154F2 0%, #F27A54 100%);
 
                         &:hover {
-                            background: #fff;
-                            color: $maincolor;
-                            transition: background .3s;
+                            background: linear-gradient(90deg,#F27A54 0% ,#A154F2 100%);
                         }
                     }
 

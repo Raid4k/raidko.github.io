@@ -55,16 +55,12 @@
         min-width: 380px;
         max-width: 800px;
         flex: 47%;
-        background: #fff;
-        box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
-        border-radius: 10px;
+        background: #3C444C;
+        box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
+       
         margin: 10px;
         flex-grow: 0;
-        &:not(:nth-child(n+3)){
-            margin-top: 0;
-            
-
-        }
+       
        
 
         @include breakpoint(md-min) {
@@ -91,6 +87,8 @@
                 padding:15px;
                 text-align: justify;
                 margin: 0;
+                color: #CBCFD4;
+                
             }
         }
 
@@ -128,13 +126,13 @@
                     
                     display: block;
                     
-                    border-radius: 10px 0px 0px 10px;
+                  
                     @include breakpoint (xlg-min){
-                        border-radius: 50%;
+                        
                         padding-top: 10px;
                     }
                     @include breakpoint (md-min){
-                        border-radius: 10px 0px 0px 10px;
+                      
                         padding-top: 0;
                     }
                 }
@@ -147,7 +145,7 @@
                 font-size: 14px;
                 text-align: center;
                 text-transform: uppercase;
-
+                color: #CBCFD4;
                 @include breakpoint (xlg-min) {
                     text-align: center;
                     margin-left: 0;
@@ -156,7 +154,6 @@
 
                 h3 {
                     text-transform: uppercase;
-                    font-family: 'Lato';
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
@@ -168,8 +165,7 @@
 
                 .bonus-descr {
                     text-transform: uppercase;
-                    color: $maincolor;
-                    font-family: 'Lato';
+                    color: #A154F2;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 400;
@@ -183,6 +179,9 @@
                     p {
                         font-size: 14px;
                         text-transform: uppercase;
+                        span{
+                            color: #F27A54;
+                        }
                     }
                 }
             }
@@ -211,9 +210,8 @@
                 .bonus-aff_btn {
                     width: 100px;
                     margin-right: 10px;
-                    border: 1px solid #930000;
-                    background: #930000;
-                    border-radius: 40px;
+                    background: linear-gradient(90deg, #A154F2 0%, #F27A54 100%);
+                    
                     line-height: 28px;
                     padding-top: 3px;
                     text-align: center;
@@ -224,10 +222,9 @@
                         margin-right: 0;
                     }
                     &:hover {
-                        background: #fff;
-                        color: #930000;
+                        background: linear-gradient(90deg,#F27A54 0% ,#A154F2 100% );
 
-                        transition: background .3s;
+                   
 
                     }
 
@@ -242,22 +239,15 @@
                     display: block;
                     outline: none;
                     cursor: pointer; 
-                    border-radius: 40px;
-                    background: #044aca;
+                    background: linear-gradient(90deg, #A154F2 0%, #F27A54 100%);
                     width: 100%;
                     text-align: center;
                     text-transform: uppercase;
                     color: #fff;
                     line-height: 14px;
-                    border: 1px solid #930000;
-                    background: #930000;
-    
-    
-
-                    &:hover {
-                        background: #fff;
-                        color: $maincolor;
-                        transition: background .3s;
+                    border: none;
+                       &:hover {
+                        background: linear-gradient(90deg,#F27A54 0% ,#A154F2 100% );
                     }
                 }
             }

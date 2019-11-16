@@ -1,7 +1,7 @@
 footer{
     .footer-wrapper{
        
-        background: #1F1F1F;
+        background: #3C444C;
         width: 100%;
         margin-top: 40px;
         display: flex;
@@ -9,7 +9,7 @@ footer{
         flex-direction: column;
         
         p{
-            color: #fff;
+            color: #CBCFD4;
             text-align: center;
         }
         ul{
@@ -19,13 +19,14 @@ footer{
             padding-top: 30px;
             margin-bottom: 20px;
 li{
-    color: #fff;
+    color: #CBCFD4;
     font-size: 18px;
     text-transform: uppercase;
     padding: 5px;
     a{
+        font-size: 11px;
         &:hover{
-            color: $maincolor;
+            color: #A154F2;
         }
     }
 
@@ -41,8 +42,8 @@ li{
     }
     .footer-mail{
         margin-bottom: 0;
-        color: #930000!important;
-            text-shadow: 0px 0px 4px #930000;
+        color: #F27A54!important;
+            
             text-transform: lowercase;
     }
 }

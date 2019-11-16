@@ -1,14 +1,17 @@
 .main-news {
     width: 100%;
     display: flex;
+
     @include breakpoint(md-min) {
         flex-direction: column;
         max-height: 100%;
+
         .main-news_wrapper {
             margin-right: 0;
             margin-bottom: 20px;
         }
     }
+
     // .top-list-block.top-list-casino {
     //     background: #fff;
     //     box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
@@ -94,8 +97,10 @@
         flex-direction: column;
         justify-content: flex-start;
         width: 100%;
+
         .main-news_title {
             position: relative;
+
             .main-news-va_btn {
                 color: #CBCFD4;
                 position: absolute;
@@ -104,6 +109,7 @@
                 padding: 5px 10px;
                 letter-spacing: .05em;
                 text-transform: uppercase;
+
                 &:before {
                     content: '';
                     position: absolute;
@@ -114,6 +120,7 @@
                     height: 1px;
                     background: linear-gradient(90deg, #F27A54 0%, #A154F2 186.42%);
                 }
+
                 &:after {
                     content: '';
                     position: absolute;
@@ -124,16 +131,19 @@
                     width: 12px;
                     height: 12px;
                 }
+
                 &:hover {
                     &:after {
                         filter: grayscale(100%);
                     }
+
                     &:before {
                         width: 100%;
                         transition: width .3s;
                     }
                 }
             }
+
             h3 {
                 line-height: 32px;
                 text-align: left;
@@ -143,10 +153,12 @@
                 letter-spacing: .1em;
             }
         }
+
         ul {
             display: flex;
             justify-content: stretch;
             flex-wrap: wrap;
+
             @include breakpoint(xlg-min) {
                 &:after {
                     content: '';
@@ -156,9 +168,11 @@
                     min-width: 200px;
                 }
             }
+
             @include breakpoint(md-min) {
                 flex-wrap: wrap;
             }
+
             li.main-news_item {
                 height: 405px;
                 flex: 5%;
@@ -173,28 +187,33 @@
                 max-width: 479px;
                 min-width: 200px;
                 color: #CBCFD4;
+
                 a {
                     &:hover {
                         box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.7);
                         transition: .3s;
+
                         .main-news_item-img {
                             &:before {
                                 opacity: 0;
                             }
                         }
                     }
+
                     h4 {
                         margin: 10px 0;
                         padding: 15px 10px;
                         text-transform: uppercase;
                         font-family: 'Montserrat', sans-serif;
                         overflow: hidden;
-            display: block;
-            display: -webkit-box;
-            text-overflow: ellipsis;
-            -webkit-line-clamp: 3; /* количество строк */
-            -webkit-box-orient: vertical;
+                        display: block;
+                        display: -webkit-box;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 3;
+                        /* количество строк */
+                        -webkit-box-orient: vertical;
                     }
+
                     .main-news_item-img {
                         display: block;
                         max-height: 180px;
@@ -204,6 +223,7 @@
                         background-repeat: no-repeat !important;
                         background-position: center !important;
                         position: relative;
+
                         &:before {
                             content: "";
                             position: absolute;
@@ -218,6 +238,7 @@
                             z-index: 0;
                         }
                     }
+
                     p,
                     .main-news_item-text {
                         text-align: left;
@@ -225,11 +246,12 @@
                         line-height: 1.064rem;
                         letter-spacing: .1px;
                         overflow: hidden;
-            display: block;
-            display: -webkit-box;
-            text-overflow: ellipsis;
-            -webkit-line-clamp: 4; /* количество строк */
-            -webkit-box-orient: vertical;
+                        display: block;
+                        display: -webkit-box;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 4;
+                        /* количество строк */
+                        -webkit-box-orient: vertical;
                         margin: 0;
                         font-family: 'Montserrat', sans-serif;
                     }
