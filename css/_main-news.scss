@@ -11,86 +11,6 @@
             margin-bottom: 20px;
         }
     }
-
-    // .top-list-block.top-list-casino {
-    //     background: #fff;
-    //     box-shadow: 0px 2px 4px rgba(159, 159, 159, 0.25);
-    //     border-radius: 10px;
-    //     position: relative;
-    //     max-width: 400px;
-    //     min-width: 350px;
-    //     max-height: 645px!important;
-    //     // width: 40%;
-    //     @include breakpoint(md-min) {
-    //         width: 100%;
-    //         max-width: 100%;
-    //     }
-    //     h3 {
-    //         background: $maincolor;
-    //         border-radius: 10px 10px 0px 0px;
-    //         line-height: 32px;
-    //         text-align: left;
-    //         padding: 12px;
-    //         text-transform: uppercase;
-    //         color: #fff;
-    //         text-shadow: #000 1px 1px 1px;
-    //         letter-spacing: .1em;
-    //         text-transform: uppercase;
-    //         text-align: center;
-    //     }
-    //     ul {
-    //         display: flex;
-    //         flex-direction: column;
-    //         li {
-    //             display: flex;
-    //             align-items: center;
-    //             text-align: left;
-    //             justify-content: space-between;
-    //             padding: 9px 0;
-    //             text-transform: uppercase;
-    //             img {
-    //                 width: 45px;
-    //                 height: 45px;
-    //                 margin: 1px 10px;
-    //                 border-radius: 45px;
-    //             }
-    //             .recent-img {
-    //                 width: 45px;
-    //                 height: 45px;
-    //                 background-size: cover !important;
-    //                 background-position: center !important;
-    //                 background-repeat: no-repeat !important;
-    //                 border-radius: 10px;
-    //                 margin-left: 10px;
-    //             }
-    //             .casino-top-title {
-    //                 width: 40%;
-    //                 margin: 0 10px;
-    //                 position: relative;
-    //                 &:hover {
-    //                     text-decoration: underline;
-    //                 }
-    //             }
-    //             .casino-top-btn {
-    //                 width: 100%;
-    //                 max-width: 120px;
-    //                 margin-right: 10px;
-    //                 border: 1px solid $maincolor;
-    //                 background: $maincolor;
-    //                 border-radius: 40px;
-    //                 line-height: 28px;
-    //                 padding-top: 3px;
-    //                 text-align: center;
-    //                 text-transform: uppercase;
-    //                 color: #fff;
-    //                 &:hover {
-    //                     background: #fff;
-    //                     color: $maincolor;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
     .main-news_wrapper {
         text-align: center;
         display: flex;
@@ -102,7 +22,7 @@
             position: relative;
 
             .main-news-va_btn {
-                color: #CBCFD4;
+                color: $maintextcolor;
                 position: absolute;
                 right: 30px;
                 top: 0;
@@ -118,7 +38,7 @@
                     left: 9px;
                     width: 0;
                     height: 1px;
-                    background: linear-gradient(90deg, #F27A54 0%, #A154F2 186.42%);
+                    background: linear-gradient(90deg, $maincolor2 0%, $maincolor 186.42%);
                 }
 
                 &:after {
@@ -149,7 +69,7 @@
                 text-align: left;
                 padding-left: 20px;
                 text-transform: uppercase;
-                color: #CBCFD4;
+                color: $maintextcolor;
                 letter-spacing: .1em;
             }
         }
@@ -179,14 +99,11 @@
                 display: flex;
                 position: relative;
                 margin: 8px 8px 0px 0px;
-                background: #3C444C;
-                mix-blend-mode: normal;
-                box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
-                border-radius: 0px;
+                @include blockvisual;
                 width: 100%;
                 max-width: 479px;
                 min-width: 200px;
-                color: #CBCFD4;
+                color: $maintextcolor;
 
                 a {
                     &:hover {
@@ -204,7 +121,7 @@
                         margin: 10px 0;
                         padding: 15px 10px;
                         text-transform: uppercase;
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: $mainfont, sans-serif;
                         overflow: hidden;
                         display: block;
                         display: -webkit-box;
@@ -253,7 +170,7 @@
                         /* количество строк */
                         -webkit-box-orient: vertical;
                         margin: 0;
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: $mainfont, sans-serif;
                     }
                 }
             }

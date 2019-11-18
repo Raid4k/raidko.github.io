@@ -1,0 +1,54 @@
+//COMMON STYLE
+
+//fonts
+$mainfont:'Montserrat';
+$secondfont:'Lato';
+
+//H1....H6 , hovers, bgs ,btns, toplist headers
+$maincolor:#A154F2;
+$maincolor2:#F27A54;
+
+//backgrounds
+$bgcolor:#30363D;
+$bgcolor2:#3C444C;
+
+//text colors
+$maintextcolor:#CBCFD4;
+$secondtextcolor:#fff;
+
+
+//block visual
+@mixin blockvisual{
+    background: $bgcolor2;
+    mix-blend-mode: normal;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
+    @include borders;
+}
+
+//borders radius
+@mixin borders{
+    border-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// add id="restyle" for restyle blocks
+//aside toplist
+.casino-top-btn#restyle {
+    background: linear-gradient(90deg, $maincolor 0%, $maincolor2 100%)!important;
+    &:hover{
+        background: linear-gradient(90deg, $maincolor2 0%,$maincolor 100% )!important;
+    }
+}

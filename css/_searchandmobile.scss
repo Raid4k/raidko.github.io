@@ -12,7 +12,7 @@
         &:hover {
             
             &:before {
-                border: 1px solid #A154F2;
+                border: 1px solid $maincolor;
             }
         }
         &:before {
@@ -27,7 +27,7 @@
             margin: 0 auto;
             top: 34px;
             left: 20px;
-            border: 1px solid #fff;
+            border: 1px solid $secondtextcolor;
             border-radius: 50%;
         }
     }
@@ -82,7 +82,7 @@
         margin: 20px 0;
         .page-title {
             span {
-                font-family: 'Circe-Exbold';
+                font-family: $mainfont;
             }
         }
     }
@@ -92,7 +92,7 @@
             margin: 50px 0;
             header {
                 h2 {
-                    font-family: 'Circe-Exbold';
+                    font-family: $mainfont;
                     margin: 10px 0;
                     a {
                         font-size: 24px;
@@ -135,13 +135,13 @@
         width: 80px;
         position: relative;
         display: block;
-        background: #30363D;
+        background: $bgcolor;
         &:hover {
             transition: background .3s ease;
-            background: #3C444C;
+            background: $bgcolor2;
         }
         &:active {
-            background: #3C444C;
+            background: $bgcolor2;
             transition: background .3s ease;
         }
         &:before {
@@ -149,7 +149,7 @@
             position: absolute;
             width: 16px;
             height: 16px;
-            background: url(//www.bitcoinbuster.com/wp-content/themes/bitcoin/css/../img/hamburger.svg) no-repeat;
+            background: url(../img/hamburger.svg) no-repeat;
             background-size: cover;
             margin: 0 auto;
             top: 40px;
@@ -167,11 +167,11 @@
     z-index: -1;
     transition: margin-top .5s;
     background: rgba(60,68,76,.95);
-    border: 2px solid #30363D;
+    border: 2px solid $bgcolor;
     ul {
         li {
             height: 50px;
-            border-bottom: 2px solid #30363D;
+            border-bottom: 2px solid $bgcolor;
             &:hover {
                 background: rgba(48,54,61,.95);
             }
@@ -181,7 +181,7 @@
                 height: 100%;
                 text-transform: uppercase;
                 text-align: center;
-                color: #CBCFD4;
+                color: $maintextcolor;
                 text-shadow: #000 1px 1px 1px;
                 line-height: 50px;
             }

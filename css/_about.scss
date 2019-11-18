@@ -4,7 +4,7 @@
     h1 {
         text-align: center;
         text-transform: uppercase;
-        color: #A154F2;
+        color: $maincolor;
         font-size: 42px;
         
     }
@@ -12,7 +12,7 @@
     h2 {
         text-align: center;
         text-transform: uppercase;
-        color: #A154F2;
+        color: $maincolor;
         margin-top: 20px;
        
     }
@@ -24,14 +24,14 @@
 
 
         .about-desc {
-            background: #3C444C;
+            background: $bgcolor2;
             min-height: 20vh;
             display: block;
             width: 100%;
             margin-top: 20px;
             margin-right: 10px;
             font-size: 24px;
-            color:#CBCFD4;
+            color:$maintextcolor;
             padding: 10px;
             text-align: center;
             
@@ -43,8 +43,8 @@
             text-align: center;
             font-size: 1.2rem;
             text-transform: uppercase;
-            color: #F27A54 ;
-            text-shadow: 0px 0px 3px #F27A54 ;
+            color: $maincolor2 ;
+            text-shadow: 0px 0px 3px $maincolor2 ;
             
            
 
@@ -77,7 +77,7 @@
         }
 
         .banner-text {
-            color: #fff;
+            color: $secondtextcolor;
             padding: 10px;
             z-index: 2;
             position: relative;
@@ -100,7 +100,7 @@
              width: 200px;
              height:300px;
              margin: 10px;
-             background: #fff;
+             background: $secondtextcolor;
              @include breakpoint(md-min) {
                 &:nth-last-child(2n){
                     display: none;

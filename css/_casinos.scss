@@ -42,8 +42,7 @@
 
 
             .casino-item-wrapper {
-                background: #3C444C;
-                box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
+                @include blockvisual;
 
                 .casino-item-img {
                     
@@ -52,14 +51,13 @@
 
                     img {
                         display: block;
-                        max-height: 250px;
-                        max-width: 250px;
+                      
                         width: 100%;
                         
                         position: relative;
-                        border: 1px solid #F27A54;
-                        border-top: 1px solid #A154F2; 
-                        border-bottom: 1px solid #A154F2;     
+                        border: 1px solid $maincolor2;
+                        border-top: 1px solid $maincolor; 
+                        border-bottom: 1px solid $maincolor;     
                     }
                 }
 
@@ -70,7 +68,7 @@
                     h2 {
                         text-transform: uppercase;
                         font-size: 18px;
-                        color: #CBCFD4;
+                        color: $maintextcolor;
 
                     }
                 }
@@ -94,12 +92,12 @@
                         width: 100%;
                         text-align: center;
                         text-transform: uppercase;
-                        color: #fff;
+                        color: $secondtextcolor;
                         line-height: 14px;
-                        background: linear-gradient(90deg, #A154F2 0%, #F27A54 100%);
+                        background: linear-gradient(90deg, $maincolor 0%, $maincolor2 100%);
 
                         &:hover {
-                            background: linear-gradient(90deg,#F27A54 0% ,#A154F2 100%);
+                            background: linear-gradient(90deg,$maincolor2 0% ,$maincolor 100%);
                         }
                     }
 
