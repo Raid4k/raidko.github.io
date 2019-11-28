@@ -21,6 +21,13 @@
                 &.game-review-left {
                     width: 100%;
                     text-shadow: 1px 1px 1px #000;
+                    p {
+                        overflow: hidden;
+                        display: -webkit-box;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                    }
                 }
                 width: 70%;
                 margin-right: 10px;
@@ -44,7 +51,6 @@
                     text-align: center;
                     max-width: 300px;
                     margin: 0 0 10px 0;
-                    @include breakpoint (md-min) {}
                 }
                 a.casino-review-btn {
                     max-width: 170px;
