@@ -217,6 +217,24 @@
 .casino-review-text {
     background: $bgcolor2;
     padding: 10px 20px;
+    h2 {
+        color: #A154F2;
+    }
+    ul {
+        line-height: 27px;
+        letter-spacing: 0.1em;
+        color: #CBCFD4;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        mix-blend-mode: normal;
+        li {
+            margin-left: 20px;
+            color: #F27A54;
+            list-style-type: disc;
+        }
+    }
     p {
         font-size: 16px;
         line-height: 27px;
