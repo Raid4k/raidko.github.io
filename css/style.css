@@ -1781,7 +1781,7 @@ footer .footer-mail {
           flex-direction: column; } }
       .casino_review-wrapper .casino-review .casino-review-adv ul {
         padding: 20px 10px;
-        width: 40%; }
+        width: 100%; }
         @media (max-width: 768px) {
           .casino_review-wrapper .casino-review .casino-review-adv ul {
             width: 100%; } }

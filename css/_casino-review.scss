@@ -90,7 +90,7 @@ z-index: 0;
             }
             ul {
                 padding: 20px 10px;
-                width: 40%;
+                width: 100%;
                 @include breakpoint (md-min) {
                     width: 100%;
                 }
